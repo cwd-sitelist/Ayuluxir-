@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Ayuluxir Wellness and Holistic Clinic</title>
-<link rel="shortcut icon" href="favicon.png">
+<link rel="shortcut icon" href="images/favicon.png">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 <body class="loading">
@@ -14,7 +15,8 @@
 <div class="noise"></div>
 <div class="color-bg"></div>
 <main id="wrapper">
-<header id="nav">
+<div>
+    <header id="nav">
 <a id="logo" href="index.html">
 <span><img src="images/log2.png" alt="Ayuluxir"></span>
 </a>
@@ -34,6 +36,8 @@
 </div>
 </nav>
 </header>
+</div>
+
 <div id="circle">
 <div class="inner">
 <i>Drag</i>
@@ -42,7 +46,9 @@
 </div>
 </div>
 <a href="#top" class="progress-circle">
-<div class="arrow"></div>
+<div class="arrow">
+    <img src="images/arrow-top.svg" alt="Scroll to top">
+</div>
 </a>
 <div class="content home" id="top">
 <!-- <section id="hero">
@@ -60,12 +66,50 @@
 </section> -->
 
 <section id="banner-prt">
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="banner-video">
+        <source src="images/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay -->
+    <div class="banner-overlay"></div>
+
+    <!-- Content -->
+    <div class="center-prt">
+
+        <span class="c-logo">
+            <div class="spin">
+                <img class="first" src="images/wave-circle-simple3860.svg" alt="">
+                <img class="second" src="images/wave-circle-simple3860.svg" alt="">
+                <div class="hy-p-20">
+                    <img src="images/log2.png" alt="Ayuluxir">
+                </div>
+            </div>
+        </span>
+
+        <span class="stone go-stone">
+            <a href="#"><img src="images/gold.png" alt=""></a>
+        </span>
+
+        <span class="stone g-stone">
+            <a href="#"><img src="images/green.png" alt=""></a>
+        </span>
+
+        <span class="stone v-stone">
+            <a href="#"><img src="images/violet.png" alt=""></a>
+        </span>
+
+    </div>
+</section>
+
+<!-- <section id="banner-prt">
 <div class="center-prt">
 
 <span class="c-logo">
 <div class="spin ">
-<img class="first" src="img/wave-circle-simple3860.svg?v=1">
-<img class="second" src="img/wave-circle-simple3860.svg?v=1">
+<img class="first" src="images/wave-circle-simple3860.svg">
+<img class="second" src="images/wave-circle-simple3860.svg">
 <div class="hy-p-20"><img  src="images/log2.png" alt="Ayuluxir"></div>
 </div>
 </span>
@@ -75,56 +119,32 @@
 <span class="stone v-stone"><a href="#"><img  src="images/violet.png" alt="Ayuluxir"></a></span>
 
 </div>
+</section> -->
 
-</section>
 
-
-<div id="hero-mood" class="hy-flex b-offset-md sm-wrap">
-<div class="hy-g hy-g-7 hy-g-sm-12 hy-g-sm-os-1">
-<div class="parallax enhancer" data-parallax="0.0">
-<div class="img-container">
-<div class="image-wrap">
-<div class="parallax-img home-img">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQOLv7pReVYa32IV_hero-jill-2x77ef.jpg?auto=format,compress&amp;q=90&amp;w=720" srcset="https://images.prismic.io/Ayuluxir/aQOLv7pReVYa32IV_hero-jill-2x.jpeg?auto=format,compress&amp;q=90&amp;w=720 1x, https://images.prismic.io/Ayuluxir/aQOLv7pReVYa32IV_hero-jill-2x.jpeg?auto=format,compress&amp;q=90&amp;w=1440 2x" alt="Jill Stout">
-<div class="fake"></div>
-</div>
-</div>
-<p class="hy-p-12 caption right"></p>
-</div>
-</div>
-</div>
-<div class="hy-g hy-g-4 hy-g-os-2">
-<div class="parallax enhancer" data-parallax="0.15">
-<div class="img-container">
-<div class="image-wrap">
-<div class="parallax-img">
-<img sizes="(min-width: 400px) 75w, 100w" src="../images.prismic.io/Ayuluxir/aBTtnfIqRLdaB1Fk_reykjadalur-hot-spring-valley20f1.jpg?auto=format%2Ccompress&amp;rect=400%2C0%2C800%2C800&amp;w=800&amp;h=800&amp;q=90&amp;w=621" srcset="https://images.prismic.io/Ayuluxir/aBTtnfIqRLdaB1Fk_reykjadalur-hot-spring-valley.jpg?auto=format%2Ccompress&amp;rect=400%2C0%2C800%2C800&amp;w=800&amp;h=800&amp;q=90&amp;w=621 1x, https://images.prismic.io/Ayuluxir/aBTtnfIqRLdaB1Fk_reykjadalur-hot-spring-valley.jpg?auto=format%2Ccompress&amp;rect=400%2C0%2C800%2C800&amp;w=800&amp;h=800&amp;q=90&amp;w=828 2x" alt="">
-<div class="fake"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<!-- About Section -->
 <div id="intro" class="hy-flex b-offset sm-wrap">
 <div class="hy-g hy-g-os-1">
 <div class="chapter-icon">
 <div class="inner">
+<!-- <img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
 <img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
 <img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
 <img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
+<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle"> -->
+<img src="images/about-left.png" alt="wave circle"  width="500px" > 
 </div>
-<span>001  —  ABOUT</span>
+<span>ABOUT Us</span>
 </div>
 </div>
 <div class="hy-g hy-g-8 hy-g-os-1 hy-g-sm-12">
-<p class=" hy-p-60-serif title-split">When you’re most authentic, you feel it—a surge of connection and clarity that changes everything. As an experienced retreat leader, I design journeys that help each person discover and embody their truest self. </p>
-<a class="text-link hy-p-20 view" href="about.html">MEET JILL</a>
+<p class=" hy-p-60-serif title-split">At Ayuluxir, we combine traditional healing, wellness, and modern aesthetic care to create a complete mind and body rejuvenation experience. Our mission is to inspire confidence, balance, and healthier living through personalized and holistic treatments. </p>
+<a class="text-link hy-p-20 view" href="#">Explore More </a>
 </div>
 </div>
+<!-- Services -->
 <div id="hy-slider" class="view">
+<h3 class="service-txt">Our Services</h3>
 <div class="hy-g-4 hy-g-os-5 hy-p-16 center">Yoga inspires healthy, deeply connected experiences that travel far beyond a single trip. </div>
 <div class="hy-p-30 center">Yoga inspires healthy, deeply connected experiences that travel far beyond a single trip. </div>
 <div class="siema"><img src="../images.prismic.io/Ayuluxir/aQOMSbpReVYa32Iv_slider-slide-148e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt=""><img src="../images.prismic.io/Ayuluxir/aQOMSbpReVYa32Iw_slider-slide-248e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt=""><img src="../images.prismic.io/Ayuluxir/aQOMTLpReVYa32I0_slider-slide-3348e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt=""><img src="../images.prismic.io/Ayuluxir/aQOMS7pReVYa32Iy_slider-slide-548e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt=""><img src="../images.prismic.io/Ayuluxir/aQOMSrpReVYa32Ix_slider-slide-448e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt=""></div>
@@ -132,33 +152,33 @@
 <div class="slider js-slider">
 <div class="slider__inner js-slider__inner"><div class="slide js-slide">
 <div class="slide__bg">
-<img src="../images.prismic.io/Ayuluxir/aQOMSbpReVYa32Iv_slider-slide-148e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt="">
+<img src="images/imag-1.jpg" alt="">
 <div class="fake"></div>
 </div>
 </div><div class="slide js-slide">
 <div class="slide__bg">
-<img src="../images.prismic.io/Ayuluxir/aQOMSbpReVYa32Iw_slider-slide-248e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt="">
+<img src="images/imag-2.avif" alt="">
 <div class="fake"></div>
 </div>
 </div><div class="slide js-slide">
 <div class="slide__bg">
-<img src="../images.prismic.io/Ayuluxir/aQOMTLpReVYa32I0_slider-slide-3348e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt="">
+<img src="images/imag-3.avif" alt="">
 <div class="fake"></div>
 </div>
 </div><div class="slide js-slide">
 <div class="slide__bg">
-<img src="../images.prismic.io/Ayuluxir/aQOMS7pReVYa32Iy_slider-slide-548e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt="">
+<img src="images/imag-4.jpg" alt="">
 <div class="fake"></div>
 </div>
 </div><div class="slide js-slide">
 <div class="slide__bg">
-<img src="../images.prismic.io/Ayuluxir/aQOMSrpReVYa32Ix_slider-slide-448e9.jpg?auto=format,compress&amp;q=90&amp;w=1024" alt="">
+<img src="images/imag-5.jpg" alt="">
 <div class="fake"></div>
 </div>
 </div></div>
 </div>
 <div class="slide-titles">
-<div class="inner"><h4>Nature</h4><h4>Clean Foods</h4><h4>Community</h4><h4>Self</h4><h4>Peace &amp; Harmony</h4></div>
+<div class="inner"><h4>Ayuluxir Divine Body & Soul Ritual</h4><h4>Golden Harmony full body Ritual</h4><h4>⁠Neuromuscular release Therapy</h4><h4>Post-natal wellness packages</h4><h4>Medical ayurveda treatements</h4></div>
 </div>
 <div class="slide-numbers">
 <span class="slide-count">
@@ -167,256 +187,183 @@
 </div>
 <span class="drag-label">DRAG</span>
 </div>
-<div class="grey-bg">
-<div id="zen-quote" class="t-offset-md b-offset-sm">
-<div class="motto">
-<h2 class="center zen-line">
-<span><span class="zen-img"><img sizes="(min-width: 400px) 75w, 100w" src="../images.prismic.io/Ayuluxir/aQOS-bpReVYa32Mv_zen-img-1-2x1623.png?auto=format,compress&amp;q=90&amp;w=159" srcset="https://images.prismic.io/Ayuluxir/aQOS-bpReVYa32Mv_zen-img-1-2x.png?auto=format,compress&amp;q=90&amp;w=159 1x, https://images.prismic.io/Ayuluxir/aQOS-bpReVYa32Mv_zen-img-1-2x.png?auto=format,compress&amp;q=90&amp;w=318 2x" alt="Doing Yoga"></span>Yoga is a</span>
-<span>connection<span class="zen-img"><img sizes="(min-width: 400px) 75w, 100w" src="../images.prismic.io/Ayuluxir/aQOS-rpReVYa32Mw_zen-img-2-2x1623.png?auto=format,compress&amp;q=90&amp;w=159" srcset="https://images.prismic.io/Ayuluxir/aQOS-rpReVYa32Mw_zen-img-2-2x.png?auto=format,compress&amp;q=90&amp;w=159 1x, https://images.prismic.io/Ayuluxir/aQOS-rpReVYa32Mw_zen-img-2-2x.png?auto=format,compress&amp;q=90&amp;w=318 2x" alt="Doing Yoga near statue"></span></span><br>
-<span>to<span class="icon"><svg viewBox="0 0 138 146" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" stroke="#294652" stroke-width="1" transform="translate(1 1)">
-<path d="m136 27.5454545c0 1.6431059-1.19625 4.2104203-3.588785 7.7020202-2.392535 3.4916-4.884722 8.0100733-7.476636 13.5555556-2.591913 5.5454823-5.0841 11.912422-7.476635 19.1010101s-3.588785 15.0959165-3.588785 23.7222222c0 4.5185411.498437 8.8316294 1.495327 12.9393944.99689 4.107764 1.495327 8.420852 1.495327 12.939394 0 6.983199-2.392499 13.144754-7.17757 18.484848s-10.5669443 8.010101-17.3457944 8.010101c-5.9813383 0-10.8660247-1.643081-14.6542056-4.929293s-5.682243-8.215455-5.682243-14.787879c0-2.875435.0996875-5.648135.2990654-8.318182.199378-2.670047.4984404-5.237361.8971963-7.70202.7975118-4.929317 3.0903237-12.2204902 6.8785047-21.8737371 3.7881809-9.6532469 8.5731798-19.3063491 14.3551401-28.959596 5.7819605-9.6532469 11.8628965-17.9713455 18.2429905-24.9545454s12.361343-10.4747475 17.943925-10.4747475c3.588803 0 5.383178 1.8484664 5.383178 5.5454545z" transform="matrix(-1 0 0 -1 208 166)"/>
-<path d="m136 7.5c0 1.92593556-1.401855 4.9351647-4.205607 9.0277778-2.803753 4.092613-5.724284 9.3888564-8.761683 15.8888889-3.037398 6.5000325-5.95793 13.9629208-8.761682 22.3888889-2.803752 8.425968-4.205607 17.6943938-4.205607 27.8055555 0 5.2963228.584106 10.3518278 1.752336 15.1666667 1.16823 4.8148392 1.752336 9.8703442 1.752336 15.1666662 0 8.185227-2.80371 15.407377-8.411214 21.666667-5.6075052 6.259291-12.3831383 9.388889-20.3271033 9.388889-7.0093808 0-12.7336227-1.925907-17.1728972-5.777778s-6.6588785-9.629591-6.6588785-17.333333c0-3.370387.1168213-6.620355.3504673-9.75s.5841098-6.138875 1.0514019-9.027778c.9345841-5.7778066 3.6214731-14.3240174 8.0607476-25.6388888 4.4392746-11.3148714 10.0466951-22.629573 16.8224299-33.9444444s13.9018323-21.0647739 21.3785043-29.25c7.476673-8.18522613 14.485949-12.2777778 21.028038-12.2777778 4.205628 0 6.308411 2.166645 6.308411 6.5z" transform="matrix(-1 0 0 -1 197 145)"/>
-<path d="m75 27.5454545c0 1.6431059-1.1962497 4.2104203-3.588785 7.7020202-2.3925354 3.4916-4.8847223 8.0100733-7.4766356 13.5555556-2.5919132 5.5454823-5.0841001 11.912422-7.4766355 19.1010101-2.3925353 7.1885881-3.588785 15.0959165-3.588785 23.7222222 0 4.5185411.4984374 8.8316294 1.4953271 12.9393944.9968897 4.107764 1.4953271 8.420852 1.4953271 12.939394 0 6.983199-2.3924995 13.144754-7.1775701 18.484848-4.7850707 5.340094-10.5669443 8.010101-17.3457944 8.010101-5.9813383 0-10.8660247-1.643081-14.6542056-4.929293s-5.682243-8.215455-5.682243-14.787879c0-2.875435.0996875-5.648135.2990654-8.318182.199378-2.670047.4984404-5.237361.8971963-7.70202.7975118-4.929317 3.0903237-12.2204902 6.8785047-21.8737371 3.7881809-9.6532469 8.5731798-19.3063491 14.3551401-28.959596 5.7819604-9.6532469 11.8628965-17.9713455 18.2429907-24.9545454s12.3613428-10.4747475 17.9439252-10.4747475c3.588803 0 5.3831776 1.8484664 5.3831776 5.5454545z" transform="matrix(-1 0 0 -1 86 166)"/>
-<path d="m75 6.54545455c0 1.93940363-1.4018551 4.96967635-4.2056075 9.09090905-2.8037523 4.1212328-5.7242839 9.4545128-8.7616822 16-3.0373984 6.5454873-5.9579299 14.0605637-8.7616823 22.5454546-2.8037523 8.4848909-4.2056074 17.8181309-4.2056074 28 0 5.33336.5841063 10.4242182 1.7523364 15.2727273 1.1682301 4.8485095 1.7523365 9.9393675 1.7523365 15.2727275 0 8.242465-2.8037103 15.51512-8.411215 21.818182-5.6075047 6.303061-12.3831378 9.454545-20.3271028 9.454545-7.0093808 0-12.7336227-1.939375-17.1728972-5.818182-4.43927453-3.878807-6.6588785-9.696931-6.6588785-17.454545 0-3.393957.11682126-6.666651.35046729-9.818182s.58410981-6.181804 1.05140187-9.090909c.93458411-5.8182111 3.62147313-14.4241856 8.06074766-25.818182 4.43927458-11.3939964 10.04669508-22.7878218 16.82242988-34.1818182 6.7757348-11.3939963 13.9018318-21.21208 21.3785047-29.4545454 7.4766729-8.24246549 14.4859486-12.3636364 21.0280374-12.3636364 4.2056285 0 6.3084112 2.18179636 6.3084112 6.54545455z" transform="matrix(-1 0 0 -1 75 144)"/>
-</g></svg></span></span>
-<span>everything</span>
-<span>real<span class="zen-img"><img sizes="(min-width: 400px) 75w, 100w" src="../images.prismic.io/Ayuluxir/aQOS-7pReVYa32Mx_zen-img-3-2x1623.png?auto=format,compress&amp;q=90&amp;w=159" srcset="https://images.prismic.io/Ayuluxir/aQOS-7pReVYa32Mx_zen-img-3-2x.png?auto=format,compress&amp;q=90&amp;w=159 1x, https://images.prismic.io/Ayuluxir/aQOS-7pReVYa32Mx_zen-img-3-2x.png?auto=format,compress&amp;q=90&amp;w=318 2x" alt="Doing Yoga near statue"></span></span>
-</h2>
-<div class="center">
-<span class="button-box">
-<a class="button view" href="classes.html"><span></span>View my classes</a>
-</span>
-</div>
-</div>
-</div>
-<div id="retreats">
-<div class="hy-flex t-offset-md b-offset-sm sm-wrap">
-<div class="hy-g hy-g-3 view hy-g-sm-10 hy-g-sm-os-2">
-<div class="parallax enhancer" data-parallax="0.25">
-<div class="img-container">
-<div class="image-wrap">
-<div class="parallax-img">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQOM17pReVYa32JW_retreats-left-2xa44a.jpg?auto=format,compress&amp;q=90&amp;w=409" srcset="https://images.prismic.io/Ayuluxir/aQOM17pReVYa32JW_retreats-left-2x.jpeg?auto=format,compress&amp;q=90&amp;w=409 1x, https://images.prismic.io/Ayuluxir/aQOM17pReVYa32JW_retreats-left-2x.jpeg?auto=format,compress&amp;q=90&amp;w=618 2x" alt="https://images.prismic.io/Ayuluxir/aQOS-7pReVYa32Mx_zen-img-3-2x.png?auto=format,compress">
-<div class="fake"></div>
-</div>
-<p class="hy-p-12 caption right">Andalucia — Spain 2018</p>
-</div>
-</div>
-</div>
-</div>
-<div class="hy-g hy-g-8 hy-g-sm-12 hy-g-sm-os-1">
-<div class="chapter-icon">
-<div class="inner">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-</div>
-<span>002  —  ADVENTURE RETREATS</span>
-</div>
-<h2 class="center title-split chars">Yoga &amp; Travel</h2>
-<div class="hy-g-4 hy-g-os-2 hy-g-sm-12 hy-g-sm-os-0">
-<p class="hy-p-20 center">Our immersive yoga retreats are built around culture, nature, breath, and movement, enabling you to be fully present in every single moment — and, during our time together, better connect with your true self.<br /><a class="text-link view" href="retreats.html">View retreats</a></p>
-</div>
-</div>
-<div class="hy-g hy-g-3 hy-g-sm-7 view">
-<div class="parallax enhancer" data-parallax="0.1">
-<div class="img-container">
-<div class="image-wrap">
-<p class="hy-p-12 caption left">Machu Picchu — Peru 2019</p>
-<div class="parallax-img">
-<img sizes="(min-width: 400px) 75w, 100w" src="../images.prismic.io/Ayuluxir/aQOM2LpReVYa32JX_retreats-right-2x6d1d.jpg?auto=format,compress&amp;q=90&amp;w=517" srcset="https://images.prismic.io/Ayuluxir/aQOM2LpReVYa32JX_retreats-right-2x.jpeg?auto=format,compress&amp;q=90&amp;w=517 1x, https://images.prismic.io/Ayuluxir/aQOM2LpReVYa32JX_retreats-right-2x.jpeg?auto=format,compress&amp;q=90&amp;w=820 2x" alt="Retreat Image">
-<div class="fake"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="connect-line view"></div>
-</div>
-<!-- upcoming -->
-<section id="retreat-detail" class="center t-offset-sm">
-<div class="hy-g-12 hy-g-os-1">
-<h2 class="center title-split chars">Upcoming</h2>
-</div>
-<div class="trip-item-wrap"><article class="view">
-<a class="retreat-box" href="thailand.html">
-<div class="retreat-img">
-<img sizes="(min-width: 400px) 75w, 100w" src="../images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter18ab5e.jpg?auto=format,compress&amp;q=90&amp;w=1241" srcset="https://images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter18.jpg?auto=format,compress&amp;q=90&amp;w=1241 1x, https://images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter18.jpg?auto=format,compress&amp;q=90 2x" alt="">
-</div>
-<h3>
-<span>Thailand</span>
-<span>Thailand</span>
-</h3>
-<span>4/8/2027—4/17/2027</span>
-</a>
-</article></div>
+
+<!--parallex-->
+<section class="parallax-section">
+    <div class="overlay"></div>
+
+    <div class="parallax-content">
+        <h2>Your Healing Journey Starts Here</h2>
+        <p>
+            Experience relaxation, wellness, and inner peace in a calm environment.
+        </p>
+        
+    </div>
 </section>
-</div>
-<section id="join" class="scrolling-container">
-<div class="book-img private-img" data-class="private">
-<img src="img/home/private-class.jpg" alt="private class">
-</div>
-<div class="book-img public-img" data-class="public">
-<img src="img/home/public-class.jpg" alt="public class">
-</div>
-<div class="tb-offset-md">
-<div class="hy-g-8 hy-g-os-3 ">
-<div class="chapter-icon">
-<div class="inner">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-<img src="img/wave-circle-simple3860.svg?v=1" alt="wave circle">
-</div>
-<span>003  —  LET'S PRACTICE</span>
-</div>
-</div>
-<div class="hy-g-8 hy-g-sm-10 hy-g-os-3 center hy-g-sm-12 hy-g-sm-os-1">
-<div class="scrolling-text">Book a Class</div>
-<h2 class="title-split chars hy-p-120" style="text-transform: uppercase;">Book a Class</h2>
-<p class="hy-g-5 hy-g-sm-10 centered hy-p-20">With both group, private, and specialized classes, there’s always an opportunity to build on your practice — or to begin your yoga journey. My current schedule includes HOT yoga, restorative, Vinyasa, prenatal, and post-natal sessions.</p>
-<span class="button-box">
-<a class="button view" data-class="private" href="private-class.html"><span></span>PRIVATE SESSION</a>
-</span>
-<span class="button-box">
-<a class="button faded view" data-class="public" href="classes.html"><span></span>PUBLIC CLASS</a>
-</span>
-</div>
-</div>
+
+<!--testimonials-->
+<section class="testimonial-section">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="testimonial-heading">
+            <h3>Testimonials</h3>
+            <p>What Our Clients Say</p>
+          
+        </div>
+
+        <div class="testimonial-slider swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>
+                            “Amazing experience! The service was excellent and
+                            everything exceeded our expectations.”
+                        </p>
+
+                        <div class="client-info">
+                            
+                            <div>
+                                <h4>John David</h4>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>
+                            “Highly professional team and great atmosphere.
+                            I would definitely recommend them.”
+                        </p>
+
+                        <div class="client-info">
+                      
+                            <div>
+                                <h4>Sarah Smith</h4>
+                                <span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>
+                            “Beautiful experience from start to finish.
+                            Everything was handled perfectly.”
+                        </p>
+
+                        <div class="client-info">
+                       
+                            <div>
+                                <h4>Michael Lee</h4>
+                                <span>Visitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="testimonial-prev">❮
+             
+            </div>
+            <div class="testimonial-next">❯
+             
+            </div>
+
+        </div>
+    </div>
 </section>
-<section id="instagram" class="b-offset-sm view">
-<div class="insta-siema"><img sizes="(min-width: 400px) 75vw, 100vw" src="https://images.prismic.io/Ayuluxir/aaXbVVxvIZEnjPxQ_socialhy.webp?auto=format%2Ccompress&amp;rect=0%2C176%2C765%2C765&amp;w=826&amp;h=826&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aaXbVVxvIZEnjPxQ_socialhy.webp?auto=format%2Ccompress&amp;rect=0%2C176%2C765%2C765&amp;w=826&amp;h=826&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aaXbVVxvIZEnjPxQ_socialhy.webp?auto=format%2Ccompress&amp;rect=0%2C176%2C765%2C765&amp;w=826&amp;h=826&amp;q=90&amp;w=826 2x" alt=""><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONqLpReVYa32J3_img-3-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONqLpReVYa32J3_img-3-2x.jpg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONqLpReVYa32J3_img-3-2x.jpg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 3"><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONqrpReVYa32J5_img-5-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONqrpReVYa32J5_img-5-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONqrpReVYa32J5_img-5-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 5"><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/Z9sZDTiBA97GirVz_icelandb402.jpg?auto=format%2Ccompress&amp;rect=296%2C0%2C1453%2C1200&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/Z9sZDTiBA97GirVz_iceland.jpg?auto=format%2Ccompress&amp;rect=296%2C0%2C1453%2C1200&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/Z9sZDTiBA97GirVz_iceland.jpg?auto=format%2Ccompress&amp;rect=296%2C0%2C1453%2C1200&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt=""><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONqbpReVYa32J4_img-4-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONqbpReVYa32J4_img-4-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONqbpReVYa32J4_img-4-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 4"><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/ZvIrA7VsGrYSvzyn_Lumeria-03404615.jpg?auto=format%2Ccompress&amp;rect=1800%2C878%2C2254%2C1861&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/ZvIrA7VsGrYSvzyn_Lumeria-0340.jpg?auto=format%2Ccompress&amp;rect=1800%2C878%2C2254%2C1861&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/ZvIrA7VsGrYSvzyn_Lumeria-0340.jpg?auto=format%2Ccompress&amp;rect=1800%2C878%2C2254%2C1861&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt=""><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONrLpReVYa32J9_img-7-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONrLpReVYa32J9_img-7-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONrLpReVYa32J9_img-7-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 7"><img sizes="(min-width: 400px) 75vw, 100vw" src="https://images.prismic.io/Ayuluxir/aBTtw_IqRLdaB1F0_food4.webp?auto=format%2Ccompress&amp;rect=366%2C0%2C1550%2C1280&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aBTtw_IqRLdaB1F0_food4.webp?auto=format%2Ccompress&amp;rect=366%2C0%2C1550%2C1280&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aBTtw_IqRLdaB1F0_food4.webp?auto=format%2Ccompress&amp;rect=366%2C0%2C1550%2C1280&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt=""><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/ZigPJfPdc1huKtqx_as-4-2xabe5.jpg?auto=format%2Ccompress&amp;rect=39%2C0%2C956%2C1034&amp;w=828&amp;h=896&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/ZigPJfPdc1huKtqx_as-4-2x.jpeg?auto=format%2Ccompress&amp;rect=39%2C0%2C956%2C1034&amp;w=828&amp;h=896&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/ZigPJfPdc1huKtqx_as-4-2x.jpeg?auto=format%2Ccompress&amp;rect=39%2C0%2C956%2C1034&amp;w=828&amp;h=896&amp;q=90&amp;w=826 2x" alt="Costa Rica Accommodation"><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter181ef2.jpg?auto=format%2Ccompress&amp;rect=144%2C0%2C1211%2C1000&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter18.jpg?auto=format%2Ccompress&amp;rect=144%2C0%2C1211%2C1000&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter18.jpg?auto=format%2Ccompress&amp;rect=144%2C0%2C1211%2C1000&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt=""><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/ZikPNPPdc1huKvJg_gallery-9-2xd5d1.jpg?auto=format%2Ccompress&amp;rect=545%2C0%2C1017%2C1100&amp;w=828&amp;h=896&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/ZikPNPPdc1huKvJg_gallery-9-2x.jpeg?auto=format%2Ccompress&amp;rect=545%2C0%2C1017%2C1100&amp;w=828&amp;h=896&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/ZikPNPPdc1huKvJg_gallery-9-2x.jpeg?auto=format%2Ccompress&amp;rect=545%2C0%2C1017%2C1100&amp;w=828&amp;h=896&amp;q=90&amp;w=826 2x" alt="Program"><img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aBTtxvIqRLdaB1F2_jonatan-pie-7FfG8zcPcXU-unsplash36c3.jpg?auto=format%2Ccompress&amp;rect=234%2C0%2C3430%2C2832&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aBTtxvIqRLdaB1F2_jonatan-pie-7FfG8zcPcXU-unsplash.jpg?auto=format%2Ccompress&amp;rect=234%2C0%2C3430%2C2832&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aBTtxvIqRLdaB1F2_jonatan-pie-7FfG8zcPcXU-unsplash.jpg?auto=format%2Ccompress&amp;rect=234%2C0%2C3430%2C2832&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt=""></div>
-<div class="siema-label"><p class="hy-p-14">Swipe to navigate</p></div>
-<div class="insta-slider">
-<div class="slider__inner js-slider__inner"><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="https://images.prismic.io/Ayuluxir/aaXbVVxvIZEnjPxQ_socialhy.webp?auto=format%2Ccompress&amp;rect=0%2C176%2C765%2C765&amp;w=826&amp;h=826&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aaXbVVxvIZEnjPxQ_socialhy.webp?auto=format%2Ccompress&amp;rect=0%2C176%2C765%2C765&amp;w=826&amp;h=826&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aaXbVVxvIZEnjPxQ_socialhy.webp?auto=format%2Ccompress&amp;rect=0%2C176%2C765%2C765&amp;w=826&amp;h=826&amp;q=90&amp;w=826 2x" alt="">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONqLpReVYa32J3_img-3-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONqLpReVYa32J3_img-3-2x.jpg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONqLpReVYa32J3_img-3-2x.jpg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 3">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONqrpReVYa32J5_img-5-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONqrpReVYa32J5_img-5-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONqrpReVYa32J5_img-5-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 5">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/Z9sZDTiBA97GirVz_icelandb402.jpg?auto=format%2Ccompress&amp;rect=296%2C0%2C1453%2C1200&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/Z9sZDTiBA97GirVz_iceland.jpg?auto=format%2Ccompress&amp;rect=296%2C0%2C1453%2C1200&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/Z9sZDTiBA97GirVz_iceland.jpg?auto=format%2Ccompress&amp;rect=296%2C0%2C1453%2C1200&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt="">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONqbpReVYa32J4_img-4-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONqbpReVYa32J4_img-4-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONqbpReVYa32J4_img-4-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 4">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/ZvIrA7VsGrYSvzyn_Lumeria-03404615.jpg?auto=format%2Ccompress&amp;rect=1800%2C878%2C2254%2C1861&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/ZvIrA7VsGrYSvzyn_Lumeria-0340.jpg?auto=format%2Ccompress&amp;rect=1800%2C878%2C2254%2C1861&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/ZvIrA7VsGrYSvzyn_Lumeria-0340.jpg?auto=format%2Ccompress&amp;rect=1800%2C878%2C2254%2C1861&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt="">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aQONrLpReVYa32J9_img-7-2x3667.jpg?auto=format,compress&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aQONrLpReVYa32J9_img-7-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aQONrLpReVYa32J9_img-7-2x.jpeg?auto=format,compress&amp;q=90&amp;w=826 2x" alt="Insta shot 7">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="https://images.prismic.io/Ayuluxir/aBTtw_IqRLdaB1F0_food4.webp?auto=format%2Ccompress&amp;rect=366%2C0%2C1550%2C1280&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aBTtw_IqRLdaB1F0_food4.webp?auto=format%2Ccompress&amp;rect=366%2C0%2C1550%2C1280&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aBTtw_IqRLdaB1F0_food4.webp?auto=format%2Ccompress&amp;rect=366%2C0%2C1550%2C1280&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt="">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/ZigPJfPdc1huKtqx_as-4-2xabe5.jpg?auto=format%2Ccompress&amp;rect=39%2C0%2C956%2C1034&amp;w=828&amp;h=896&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/ZigPJfPdc1huKtqx_as-4-2x.jpeg?auto=format%2Ccompress&amp;rect=39%2C0%2C956%2C1034&amp;w=828&amp;h=896&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/ZigPJfPdc1huKtqx_as-4-2x.jpeg?auto=format%2Ccompress&amp;rect=39%2C0%2C956%2C1034&amp;w=828&amp;h=896&amp;q=90&amp;w=826 2x" alt="Costa Rica Accommodation">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter181ef2.jpg?auto=format%2Ccompress&amp;rect=144%2C0%2C1211%2C1000&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter18.jpg?auto=format%2Ccompress&amp;rect=144%2C0%2C1211%2C1000&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aXrXLgIvOtkhCDfU_ThailandRetreatcenter18.jpg?auto=format%2Ccompress&amp;rect=144%2C0%2C1211%2C1000&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt="">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/ZikPNPPdc1huKvJg_gallery-9-2xd5d1.jpg?auto=format%2Ccompress&amp;rect=545%2C0%2C1017%2C1100&amp;w=828&amp;h=896&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/ZikPNPPdc1huKvJg_gallery-9-2x.jpeg?auto=format%2Ccompress&amp;rect=545%2C0%2C1017%2C1100&amp;w=828&amp;h=896&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/ZikPNPPdc1huKvJg_gallery-9-2x.jpeg?auto=format%2Ccompress&amp;rect=545%2C0%2C1017%2C1100&amp;w=828&amp;h=896&amp;q=90&amp;w=826 2x" alt="Program">
-</div>
-</div><div class="slide js-slide">
-<div class="slide__bg">
-<img sizes="(min-width: 400px) 75vw, 100vw" src="../images.prismic.io/Ayuluxir/aBTtxvIqRLdaB1F2_jonatan-pie-7FfG8zcPcXU-unsplash36c3.jpg?auto=format%2Ccompress&amp;rect=234%2C0%2C3430%2C2832&amp;w=826&amp;h=682&amp;q=90&amp;w=413" srcset="https://images.prismic.io/Ayuluxir/aBTtxvIqRLdaB1F2_jonatan-pie-7FfG8zcPcXU-unsplash.jpg?auto=format%2Ccompress&amp;rect=234%2C0%2C3430%2C2832&amp;w=826&amp;h=682&amp;q=90&amp;w=826 1x, https://images.prismic.io/Ayuluxir/aBTtxvIqRLdaB1F2_jonatan-pie-7FfG8zcPcXU-unsplash.jpg?auto=format%2Ccompress&amp;rect=234%2C0%2C3430%2C2832&amp;w=826&amp;h=682&amp;q=90&amp;w=826 2x" alt="">
-</div>
-</div></div>
-</div>
-<div class="hy-flex">
-<div class="hy-g-12 hy-g-os-1">
-<h2 class=""><span class="title-split chars">Insta</span><span class="title-split chars">gram</span></h2>
-<a href="https://www.instagram.com/Ayuluxir/" target="_blank" class="insta-link">
-<div class="spin">
-<img class="first" src="img/wave-circle-simple3860.svg?v=1">
-<img class="second" src="img/wave-circle-simple3860.svg?v=1">
-<div class="hy-p-20"><span><img src="img/insta-icon3860.svg?v=1"></span><span>connect</span></div>
-</div>
-</a>
-</div>
-</div>
+
+
+<!--locaation and form-->
+<section class="contact-section">
+    <div class="container-1">
+
+        <!-- Left Side - Map -->
+        <div class="contact-left">
+            <h2>Our Location</h2>
+            <p>Visit us and begin your healing journey.</p>
+            
+            <div class="map-box">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.938349756661!2d-1.8275297!3d52.5345496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870a5ce540b4dd5%3A0x12199213e5780f09!2sAyuluxir%20Wellness%20and%20Holistic%20Clinic!5e0!3m2!1sen!2sin!4v1779096887119!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Right Side - Contact Form -->
+        <div class="contact-right">
+            <h2>Contact Us</h2>
+
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+    </div>
 </section>
+
+<!-- zen quote -->
+
 <!-- footer -->
 <footer id="footer">
 <div class="hy-flex sm-wrap">
-<div class="hy-g-3 hy-g-sm-12">
-<p>Connect</p>
-<ul>
-<li><a href="https://www.instagram.com/Ayuluxir/" target="_blank" >Instagram</a></li>
-<li><a href="https://www.youtube.com/channel/UCGsuBvRuviIkKJSnnj7xbCQ" target="_blank">Youtube</a></li>
-<li><a href="https://www.facebook.com/TheAyuluxir/" target="_blank">Facebook</a></li>
-</ul>
+<div class="hy-g-3 hy-g-sm-12 footer-about">
+    
+    <!-- Logo -->
+    <div class="footer-logo">
+        <img src="images/log2.png" alt="Logo" width="70%">
+    </div>
+
+    <!-- Small Content -->
+    <p class="footer-text">
+        Welcome to Ayuluxir, where wellness and luxury come together. 
+        Experience relaxation, rejuvenation, and holistic care.
+    </p>
+
 </div>
 <div class="hy-g-3 hy-g-os-1 hy-g-sm-12 hy-g-sm-os-0">
-<p>Join</p>
+<p>Quick Links</p>
 <ul>
-<li><a href="private-class.html" >Private Class</a></li>
-<li><a href="classes.html" >Public Class</a></li>
-<li><a href="retreats.html" >Retreats</a></li>
+<li><a href="private-class.html" >Home</a></li>
+<li><a href="classes.html" >About Us</a></li>
+<li><a href="retreats.html" >Services</a></li>
+<li><a href="retreats.html" >Events</a></li>
+<li><a href="retreats.html" >Contact US</a></li>
 </ul>
 </div>
 <div class="hy-g-4 hy-g-os-1 hy-g-sm-12 hy-g-sm-os-0 footer-form">
-<form class="subscribe_form">
-<label for="email">Newsletter</label>
-<div class="wrap">
-<input type="email" name="email" id="newsletter" size="30" aria-required="true" aria-invalid="false" placeholder="Your email" required>
-<button></button>
-</div>
-<!-- Form Results -->
-<div class="form-result success">
-<div class="inner">
-<svg version="1.1" width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-<style type="text/css">.icon-check-teal-0{fill:#294652;} .icon-check-teal-1{fill:#FFFFFF;} </style>
-<path class="icon-check-teal-0" d="M57.3,31c-0.7-1.2-1.4-2.5-1.6-3.7c-0.1-1.2,0.3-2.6,0.7-3.9c0.5-1.8,1.2-3.8,0.5-5.4c-0.7-1.6-2.5-2.4-4.3-3.3 c-1.3-0.6-2.6-1.2-3.4-2.1c-0.8-0.9-1.3-2.4-1.7-3.5c-0.6-1.9-1.3-3.8-2.9-4.7C43.1,3.5,41,4,39.1,4.3c-1.3,0.3-2.7,0.5-3.8,0.3 c-1.2-0.3-2.5-1.2-3.6-2c-1.6-1.1-3.2-2.3-4.9-2.1c-1.7,0.2-3.1,1.7-4.4,3.1c-0.9,1-1.9,2.1-3,2.6c-1.1,0.5-2.7,0.5-3.9,0.5l-0.1,0 c-1.9,0-3.9,0-5.2,1.2C9.8,8.2,9.6,8.5,9.4,8.8c-0.6,1.1-0.8,2.5-1,4.1c-0.2,1.5-0.3,3-0.9,4c-0.6,1.1-1.9,2-3,2.8l-0.1,0.1 c-1.2,0.9-2.3,1.7-3,2.9c-0.2,0.4-0.4,0.7-0.4,1.1c-0.4,1.7,0.6,3.5,1.6,5.2c0.7,1.2,1.4,2.5,1.6,3.7c0.1,1.2-0.3,2.6-0.7,3.9 c-0.6,1.8-1.2,3.8-0.5,5.4c0.7,1.6,2.5,2.4,4.3,3.3c1.3,0.6,2.6,1.2,3.4,2.1c0.7,0.8,1.2,2.1,1.7,3.5c0.6,1.8,1.2,3.8,2.9,4.7 c1.6,0.9,3.7,0.5,5.6,0.1c1.4-0.3,2.8-0.6,3.8-0.3c1.2,0.3,2.5,1.2,3.6,2c1.5,1,3,2.1,4.6,2.1c0.1,0,0.2,0,0.3,0 c1.7-0.2,3.1-1.7,4.4-3.1c0.9-1,1.9-2.1,3-2.6c1.1-0.5,2.7-0.5,3.9-0.5l0.1,0c1.9,0,3.9,0,5.2-1.2c0.3-0.3,0.5-0.6,0.7-0.9 c0.6-1.1,0.8-2.5,1-4l0-0.1c0.2-1.5,0.3-3,0.9-4c0.6-1.1,1.9-2,3-2.8l0.1-0.1c1.2-0.9,2.3-1.7,3-2.8c0.2-0.3,0.4-0.7,0.4-1.1 C59.3,34.5,58.3,32.7,57.3,31z M30.7,35.5c-2.2,2.4-3.6,3.8-5,3.9c-0.5,0-0.9-0.2-1.2-0.5c-1.7-1.7-3.1-3.4-4.8-5.3 c-1-1.1-2-2.3-3.3-3.7c-0.4-0.4-0.3-1.1,0.1-1.5s1.1-0.3,1.5,0.1c1.2,1.4,2.3,2.6,3.3,3.7c1.6,1.8,3,3.4,4.5,5 c0.7-0.3,2.4-2.1,3.3-3.1c0.7-0.8,1.4-1.5,2-2c1.7-1.5,3.2-3.2,4.8-4.8c2-2.1,4-4.3,6.3-6.2c0.4-0.4,1.1-0.3,1.5,0.1 c0.5,0.4,0.4,1.1,0,1.5c-2.2,1.9-4.3,4-6.2,6.1c-1.5,1.7-3.1,3.4-4.8,4.9C32,34,31.3,34.7,30.7,35.5z"/>
-<path class="icon-check-teal-1" d="M42.1,20.9c-2.3,2-4.3,4.2-6.3,6.2c-1.5,1.6-3.1,3.3-4.8,4.8c-0.6,0.6-1.3,1.3-2,2c-0.9,1-2.6,2.8-3.3,3.1 c-1.6-1.6-3-3.2-4.5-5c-1-1.2-2-2.4-3.3-3.7c-0.4-0.4-1.1-0.5-1.5-0.1s-0.5,1.1-0.1,1.5c1.2,1.4,2.3,2.6,3.3,3.7 c1.7,1.9,3.1,3.6,4.8,5.3c0.3,0.3,0.7,0.5,1.2,0.5c1.4,0,2.8-1.5,5-3.9c0.7-0.7,1.3-1.4,1.8-1.9c1.7-1.6,3.3-3.3,4.8-4.9 c2-2,4-4.2,6.2-6.1c0.4-0.4,0.5-1.1,0-1.5C43.2,20.6,42.5,20.5,42.1,20.9z"/>
-</svg>
-<p>You're now subscribed!</p>
-</div>
-</div>
-<div class="form-result other-message">
-<div class="inner">
-<p>You're already subscribed.</p>
-</div>
-</div>
-<div class="form-result failed">
-<div class="inner">
-<svg version="1.1" width="60px" height="60px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-<style type="text/css"> .icon-close-0{fill:#294652;} .icon-close-1{fill:#FFFFFF;} </style>
-<path class="icon-close-0" d="M57.3,31c-0.7-1.2-1.4-2.5-1.6-3.7c-0.1-1.2,0.3-2.6,0.7-3.9c0.5-1.8,1.2-3.8,0.5-5.4c-0.7-1.6-2.5-2.4-4.3-3.3 c-1.3-0.6-2.6-1.2-3.4-2.1c-0.8-0.9-1.3-2.4-1.7-3.5c-0.6-1.9-1.3-3.8-2.9-4.7C43.1,3.5,41,4,39.1,4.3c-1.3,0.3-2.7,0.5-3.8,0.3 c-1.2-0.3-2.5-1.2-3.6-2c-1.6-1.1-3.2-2.3-4.9-2.1c-1.7,0.2-3.1,1.7-4.4,3.1c-0.9,1-1.9,2.1-3,2.6c-1.1,0.5-2.7,0.5-3.9,0.5l-0.1,0 c-1.9,0-3.9,0-5.2,1.2C9.8,8.2,9.6,8.5,9.4,8.8c-0.6,1.1-0.8,2.5-1,4.1c-0.2,1.5-0.3,3-0.9,4c-0.6,1.1-1.9,2-3,2.8l-0.1,0.1 c-1.2,0.9-2.3,1.7-3,2.9c-0.2,0.4-0.4,0.7-0.4,1.1c-0.4,1.7,0.6,3.5,1.6,5.2c0.7,1.2,1.4,2.5,1.6,3.7c0.1,1.2-0.3,2.6-0.7,3.9 c-0.6,1.8-1.2,3.8-0.5,5.4c0.7,1.6,2.5,2.4,4.3,3.3c1.3,0.6,2.6,1.2,3.4,2.1c0.7,0.8,1.2,2.1,1.7,3.5c0.6,1.8,1.2,3.8,2.9,4.7 c1.6,0.9,3.7,0.5,5.6,0.1c1.4-0.3,2.8-0.6,3.8-0.3c1.2,0.3,2.5,1.2,3.6,2c1.5,1,3,2.1,4.6,2.1c0.1,0,0.2,0,0.3,0 c1.7-0.2,3.1-1.7,4.4-3.1c0.9-1,1.9-2.1,3-2.6c1.1-0.5,2.7-0.5,3.9-0.5l0.1,0c1.9,0,3.9,0,5.2-1.2c0.3-0.3,0.5-0.6,0.7-0.9 c0.6-1.1,0.8-2.5,1-4l0-0.1c0.2-1.5,0.3-3,0.9-4c0.6-1.1,1.9-2,3-2.8l0.1-0.1c1.2-0.9,2.3-1.7,3-2.8c0.2-0.3,0.4-0.7,0.4-1.1 C59.3,34.5,58.3,32.7,57.3,31z"/>
-<polygon class="icon-close-1" points="36,38.5 29.9,31.8 23.2,37.9 21.5,35.9 28.2,29.9 22.2,23.2 24,21.5 30,28.2 36.8,22.1 38.5,24.1 31.8,30.1 37.8,36.8 "/>
-</svg>
-<p>Something went wrong. Please refresh and try again.</p>
-</div>
-</div>
-<!-- End Form Results -->
-</form>
+<p>Social Media</p> <ul> <li><a href="https://www.instagram.com/Ayuluxir/" target="_blank" >Instagram</a></li> <li><a href="https://www.youtube.com/channel/UCGsuBvRuviIkKJSnnj7xbCQ" target="_blank">Youtube</a></li> <li><a href="https://www.facebook.com/TheAyuluxir/" target="_blank">Facebook</a></li> </ul>
 </div>
 </div>
 <div class="hy-flex sm-wrap copy view">
 <div class="hy-g-3 hy-g-sm-12">
-<p>&copy; 2026 — Ayuluxir Yogi, LLC</p>
+<p>&copy; 2026 — Ayuluxir </p>
 </div>
-<div class="hy-g-3 hy-g-os-1 hy-g-sm-12 hy-g-sm-os-0">
+<!-- <div class="hy-g-3 hy-g-os-1 hy-g-sm-12 hy-g-sm-os-0">
 <p><a href="https://buzzworthystudio.com/" target="_blank" class="bs">Website by Buzzworthy <span class="label">Studio</span><span class="bs-logo"><svg viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 <g id="02-about" transform="translate(-1245.000000, -9330.000000)" fill="#000000" fill-rule="nonzero">
@@ -430,18 +377,43 @@
 </g>
 </g>
 </svg></span></a></p>
-</div>
-<div class="hy-g-3 hy-g-os-1 hy-g-sm-12 hy-g-sm-os-0">
+</div> -->
+<!-- <div class="hy-g-3 hy-g-os-1 hy-g-sm-12 hy-g-sm-os-0">
 <div class="newsletter"></div>
 <noscript>Sorry, you need Javascript on to email me.</noscript>
-</div>
+</div> -->
 </div>
 </footer>
+
 </div>
+<div class="whatsappfooter">
+    <a class="whats-app-icon" href="#" target="_blank" rel="noopener"><img loading="lazy" src="images/whatsapp.png" alt="WhatsApp"></a>
+  </div>
 </main>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Mirrored from Ayuluxir.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 May 2026 14:06:09 GMT -->
+<script>
+    // slider 
+
+var swiper = new Swiper(".testimonial-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    speed: 1000,
+
+    navigation: {
+        nextEl: ".testimonial-next",
+        prevEl: ".testimonial-prev",
+    },
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    }
+});
+
+</script>
+</body>
 </html>

@@ -317,6 +317,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  justify-content: center;
 }
 .flex-bottom {
   -webkit-box-align: end;
@@ -1778,7 +1779,7 @@ figure {
   -ms-transform: translate(0%, 0%);
   position: static;
   opacity: 1;
-  width: 40px;
+  width: 170px;
   height: auto;
 }
 #circle {
@@ -2299,13 +2300,16 @@ figure {
 }
 #intro {
   position: relative;
+  padding: 80px 0px 80px 0px;
 }
 #intro .text-link {
   margin-top: 4em;
 }
 #hy-slider {
   position: relative;
+   padding: 80px 0px 80px 0px;
 }
+
 #hy-slider > div {
   position: relative;
   z-index: 2;
@@ -4806,17 +4810,21 @@ section#banner-prt {
     width: 290px;
     z-index: 99;
 }
+.stone img{
+  width: 70% !important;
+}
 .stone.g-stone {
-    left: 31px;
+    left: 118px;
 }
 
 .stone.v-stone {
-    right: 10px;
+    right: 25px;
+    top: 8px;
 }
 .stone.go-stone {
-        bottom: -371px;
-        top:unset;
-    left: 50%;
+    bottom: -236px;
+    top:unset;
+    left: 55%;
     right: 50%;
     transform: translate(-50%, -50%);
 }
@@ -4831,4 +4839,334 @@ span.c-logo {
     position: relative;
     margin: 0 auto;
     height: calc(100vh - 131px);
+}
+
+/* Video */
+.banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Optional dark overlay */
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(2,1,1,0.28); /* change opacity */
+    z-index: -1;
+}
+
+.service-txt{
+    text-align: center;
+
+}
+
+
+.testimonial-section {
+    padding: 80px 0;
+   
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.client-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client-info h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.client-info span {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Prev Next Buttons */
+.testimonial-prev,
+.testimonial-next {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.testimonial-prev {
+    left: 0;
+}
+
+.testimonial-next {
+    right: 0;
+}
+
+@media(max-width:768px){
+
+    .testimonial-card{
+        padding: 25px;
+    }
+
+    .testimonial-prev,
+    .testimonial-next{
+        width:40px;
+        height:40px;
+        font-size:16px;
+    }
+}
+.testimonial-heading{
+  text-align: center;
+   font-size: 36px;
+  margin-bottom: 20px;
+  font-family: "HY Serif", serif;
+
+}
+
+.footer-logo img{
+  width: 50% !important;
+
+}
+
+.contact-section{
+   
+    padding: 80px 0px;
+}
+
+.container-1{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.contact-left,
+.contact-right{
+    flex: 1;
+}
+
+/* Left Side */
+.contact-left h2{
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.contact-left p{
+    color: #8b6b4a;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.map-box{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.map-box iframe{
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* Right Side Form */
+.contact-right{
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.contact-right h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #222;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea{
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-group textarea{
+    height: 150px;
+    resize: none;
+}
+
+button{
+    width: 100%;
+    background: #8b6540;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media(max-width: 991px){
+    .container{
+        flex-direction: column;
+    }
+
+    .contact-left h2,
+    .contact-right h2{
+        font-size: 32px;
+    }
+
+    .map-box iframe{
+        height: 350px;
+    }
+}
+
+
+.parallax-section {
+    position: relative;
+    height: 500px;
+    background-image: url('../images/parallax-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Parallax Effect */
+    background-attachment: fixed;
+    overflow: scroll;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Overlay */
+.parallax-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+/* Center Content */
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.parallax-content h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.parallax-content p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Mobile Fix */
+@media(max-width:768px){
+    .parallax-section{
+        background-attachment: scroll;
+        height: 350px;
+    }
+
+    .parallax-content h2{
+        font-size: 34px;
+    }
+}
+
+
+.whatsappfooter
+ {
+    position: fixed;
+    bottom: 80px;
+    height: 50px;
+    z-index: 9999;
+    width: 40px;
+    right: 25px;
+}
+
+.arrow img{
+    width: 110% !important;
+    padding: 18px;
+    margin: 3px 0px 0px 0px;
+
 }
