@@ -42,7 +42,7 @@
 .progress-circle .arrow {
   width: 100%;
   height: 100%;
-  background-image: url("../img/arrow-top.svg");
+  background-image: url("../images/arrow-top.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30% 30%;
@@ -1118,10 +1118,17 @@ body {
     -ms-transform: scaleY(0);
   }
 }
+.inner a{
+  color: #fff;
+
+}
 a {
   text-decoration: none;
   color: #204050;
   outline: none;
+}
+#logo img{
+  width: 170% !important;
 }
 a:hover,
 a:focus {
@@ -1598,6 +1605,7 @@ h3 {
   line-height: 1;
   margin: 0;
   padding: 0.5em 0 0.2em;
+  letter-spacing: 2px;
 }
 img {
   width: 100%;
@@ -1738,8 +1746,8 @@ figure {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 53%;
   transform: translate(-50%, -50%) rotate(15deg);
   -moz-transform: translate(-50%, -50%) rotate(15deg);
   -webkit-transform: translate(-50%, -50%) rotate(15deg);
@@ -1780,7 +1788,9 @@ figure {
   position: static;
   opacity: 1;
   width: 170px;
+  margin-bottom: 96px;
   height: auto;
+ 
 }
 #circle {
   pointer-events: none;
@@ -2036,6 +2046,8 @@ figure {
   top: 0;
   left: 0;
   z-index: 99;
+  transition: 0.3s ease;
+  background: transparent;
 }
 #nav nav {
   z-index: 99;
@@ -2144,10 +2156,10 @@ figure {
   height: 100vh;
   overflow: hidden;
 }
-#wrapper .content {
+/* #wrapper .content {
   padding-top: 130px;
   overflow: hidden;
-}
+} */
 .page-to-page {
   position: fixed;
   top: 0;
@@ -2304,14 +2316,16 @@ figure {
 }
 #intro .text-link {
   margin-top: 4em;
+  color: #000;
 }
 #hy-slider {
   position: relative;
    padding: 80px 0px 80px 0px;
+   background: #e4e7df;
 }
 
 #hy-slider > div {
-  position: relative;
+  /* position: relative; */
   z-index: 2;
 }
 #hy-slider h2 {
@@ -2693,7 +2707,7 @@ figure {
   }
 }
 #footer ul {
-  padding: 2em 0;
+  padding: 1em 0;
   font-size: 2.75vw;
   text-transform: uppercase;
   font-family: "HY Serif", serif;
@@ -4803,6 +4817,7 @@ figure {
 section#banner-prt {
     position: relative;
     height:100vh;
+    padding-top: 100px;
 }
 .stone {
     position: absolute;
@@ -4811,18 +4826,18 @@ section#banner-prt {
     z-index: 99;
 }
 .stone img{
-  width: 70% !important;
+  width: 60% !important;
 }
 .stone.g-stone {
-    left: 118px;
+    left: 138px;
 }
 
 .stone.v-stone {
-    right: 25px;
+    right: 45px;
     top: 8px;
 }
 .stone.go-stone {
-    bottom: -236px;
+    bottom: -153px;
     top:unset;
     left: 55%;
     right: 50%;
@@ -4862,6 +4877,7 @@ span.c-logo {
 
 .service-txt{
     text-align: center;
+    color: #74786c ;
 
 }
 
@@ -4884,7 +4900,7 @@ span.c-logo {
 }
 
 .testimonial-card {
-    background: #fff;
+    background: #e4e7df;
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -4929,7 +4945,7 @@ span.c-logo {
 .testimonial-next {
     width: 50px;
     height: 50px;
-    background: #000;
+    background: #74786c;
     color: #fff;
     border-radius: 50%;
     position: absolute;
@@ -4952,11 +4968,11 @@ span.c-logo {
 }
 
 .testimonial-prev {
-    left: 0;
+    left: 16px;
 }
 
 .testimonial-next {
-    right: 0;
+    right: 20px;
 }
 
 @media(max-width:768px){
@@ -4972,7 +4988,7 @@ span.c-logo {
         font-size:16px;
     }
 }
-.testimonial-heading{
+.testimonial-heading {
   text-align: center;
    font-size: 36px;
   margin-bottom: 20px;
@@ -4980,21 +4996,31 @@ span.c-logo {
 
 }
 
+.testimonial-heading p{
+  font-family:serif ;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+
 .footer-logo img{
   width: 50% !important;
 
 }
 
 .contact-section{
+  text-align: center;
    
-    padding: 80px 0px;
+    padding: 30px 0px 50px 0px;
 }
 
 .container-1{
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     display: flex;
-    gap: 40px;
+    
     align-items: center;
 }
 
@@ -5063,8 +5089,8 @@ span.c-logo {
 }
 
 button{
-    width: 100%;
-    background: #8b6540;
+    width: 50%;
+    background: #74786c;
     color: #fff;
     border: none;
     padding: 18px;
@@ -5106,7 +5132,6 @@ button:hover{
 
     /* Parallax Effect */
     background-attachment: fixed;
-    overflow: scroll;
 
     display: flex;
     align-items: center;
@@ -5134,6 +5159,7 @@ button:hover{
 .parallax-content h2 {
     font-size: 50px;
     margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 .parallax-content p {
@@ -5169,4 +5195,7 @@ button:hover{
     padding: 18px;
     margin: 3px 0px 0px 0px;
 
+}
+.title-split a{
+   color:#74786c;
 }

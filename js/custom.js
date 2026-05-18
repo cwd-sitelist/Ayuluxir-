@@ -10,6 +10,7 @@ gsap.config({
 });
 
 
+
 // GET OUR LETTER RANDOM VALS
 const scrollLetters = document.querySelectorAll(".lettering div") //get our letters
 let randomValues = [] //make our array
@@ -1494,8 +1495,8 @@ PageInits = {
           })
           chapterTween.to(chImg, {
             duration: 2,
-            opacity: .25,
-            rotation: gsap.utils.wrap([135, 150, 165, 180, 195]),
+            opacity: .75,
+            rotation: gsap.utils.wrap([0, 90, 180, 270, 360]),
             scale: 1,
             transformOrigin:'center center',
             ease: "power4",
@@ -1649,7 +1650,7 @@ PageInits = {
                 }
               }
               var emailAddress = document.querySelector(".newsletter");
-              emailAddress.innerHTML = ("<a class='text-link' target='_blank' href='mailto:"+link+"'><span>jill@Ayuluxiryogi.com</span></a>");
+              emailAddress.innerHTML = ("<a class='text-link' target='_blank' href='mailto:"+link+"'><span>jill@Ayuluxir.com</span></a>");
             }
           }
 
