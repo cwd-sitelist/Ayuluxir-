@@ -405,6 +405,7 @@
 }
 .hy-g-os-1 {
   margin-left: 7.14285vw;
+  color: #74786c ;
 }
 .hy-g-os-2 {
   margin-left: 14.2857vw;
@@ -2669,10 +2670,10 @@ figure {
   margin-bottom: 3rem;
 }
 #footer {
-  border-top: 1px solid #204050;
+  background-color: #e4e7df;
   overflow: hidden;
   padding: 10vh 0;
-  margin: 0 7.14285vw;
+  
 }
 #footer .form-result {
   position: relative;
