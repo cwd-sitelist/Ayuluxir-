@@ -52,6 +52,7 @@
 }
 #hy-slider .hy-p-16 {
   text-transform: uppercase;
+  line-height: 1.4;
 }
 .siema-label {
   display: none;
@@ -1133,7 +1134,7 @@ a {
   outline: none;
 }
 #logo img{
-  width: 210% !important;
+  width: 230% !important;
 }
 a:hover,
 a:focus {
