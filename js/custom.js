@@ -36,6 +36,29 @@ const smoothScroll = function(){
     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
     locoScroll.on("scroll", ScrollTrigger.update);
 
+    const nav = document.querySelector("#nav");
+    let lastScrollY = 0;
+    const getScrollY = () => locoScroll.scroll.instance?.scroll?.y || 0;
+    if (nav) {
+      lastScrollY = getScrollY();
+      locoScroll.on("scroll", () => {
+        const currentScrollY = getScrollY();
+        const delta = currentScrollY - lastScrollY;
+        const isScrollingDown = delta > 30;
+        const isScrollingUp = delta < -120;
+        const nearTop = currentScrollY < 180;
+        const upperArea = currentScrollY < 420;
+
+        if (isScrollingDown && currentScrollY > 150) {
+          nav.classList.add("hide");
+        } else if (nearTop || (isScrollingUp && upperArea)) {
+          nav.classList.remove("hide");
+        }
+
+        lastScrollY = currentScrollY;
+      });
+    }
+
     // tell ScrollTrigger to use these proxy methods for the ".content" element since Locomotive Scroll is hijacking things
     ScrollTrigger.scrollerProxy(".content", {
       scrollTop(value) {
@@ -1891,9 +1914,11 @@ PageInits = {
 
               let progressScale = Math.abs(((pDistBottom - pHeight) / pHeight).toFixed(3))
               const progressDist = (progressScale * 100 / 4).toFixed(2)
+              pCircle.style.opacity = 0;
               pArrow.style.opacity = 0
               pCircle.style.transform = "translateY("+ progressDist +"vh) scale(.25)";
               if (pDistBottom <= 150)  {
+                 pCircle.style.opacity = 1;
                 pArrow.style.opacity = 1
                 pCircle.style.transform = "translateY("+ progressDist +"vh) scale(1)";
                 pCircle.style.pointerEvents = "auto"
@@ -2235,7 +2260,53 @@ $(function(){
     },
   },
   smoothState = $('#wrapper').smoothState(options).data('smoothState');
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".parallax-bg", {
+    y: 120,
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".parallax-section",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+    }
 });
+
+ScrollTrigger.scrollerProxy(".content", {
+    scrollTop(value) {
+        return arguments.length
+            ? locoScroll.scrollTo(value, 0, 0)
+            : locoScroll.scroll.instance.scroll.y;
+    },
+
+    getBoundingClientRect() {
+        return {
+            top: 0,
+            left: 0,
+            width: window.innerWidth,
+            height: window.innerHeight
+        };
+    },
+
+    pinType: document.querySelector(".content").style.transform
+        ? "transform"
+        : "fixed"
+});
+
+locoScroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+ScrollTrigger.refresh();
+
+});
+
+
+
 
 
 
