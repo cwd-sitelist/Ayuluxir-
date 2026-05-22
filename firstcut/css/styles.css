@@ -1803,6 +1803,31 @@ figure {
   height: auto;
  
 }
+@media (min-width:1200px) and (max-width:1400px) {
+  .spin div img {
+      width: 100%;
+    margin-bottom: 78px;
+    margin-left: 6px;
+
+  }
+  .stone.g-stone {
+    left: 412px !important;
+}
+.stone.v-stone
+
+ {
+    right: 250px !important;
+    top: 123px !important;
+}
+.stone.go-stone {
+    bottom: 80px !important;
+    top: unset;
+    left: 59% !important;
+    right: 50% !important;
+    transform: translate(-50%, -50%);
+}
+  
+}
 #circle {
   pointer-events: none;
   z-index: 20;
