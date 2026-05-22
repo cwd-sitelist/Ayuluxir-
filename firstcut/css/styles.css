@@ -1693,7 +1693,8 @@ figure {
 }
 .hy-p-60-serif {
   font-family: "HY Serif", serif;
-  font-size: 4.2vw;
+  /* font-size: 4.2vw; */
+      font-size: 50px;
   line-height: 1.2;
   padding: 0.3em 0 0.1em;
 }
@@ -1796,8 +1797,9 @@ figure {
   -ms-transform: translate(0%, 0%);
   position: static;
   opacity: 1;
-  width: 170px;
-  margin-bottom: 96px;
+      width: 100%;
+    margin-bottom: 78px;
+    margin-left: 6px;
   height: auto;
  
 }
@@ -4859,25 +4861,26 @@ section#banner-prt {
 }
 .stone {
     position: absolute;
-    top: 10px;
+    top: -29px;
     width: 290px;
     z-index: 99;
 }
 .stone img{
-  width: 60% !important;
+  width: 31% !important;
 }
 .stone.g-stone {
-    left: 174px;
+    left: 438px;
 }
 
 .stone.v-stone {
-    right: 45px;
-    top: 8px;
+    right: 219px;
+    top: 141px;
 }
+
 .stone.go-stone {
-    bottom: -110px;
-    top:unset;
-    left: 58%;
+    bottom: 117px;
+    top: unset;
+    left: 62%;
     right: 50%;
     transform: translate(-50%, -50%);
 }
