@@ -1694,8 +1694,8 @@ figure {
 .hy-p-60-serif {
   font-family: "HY Serif", serif;
   /* font-size: 4.2vw; */
-      font-size: 50px;
-  line-height: 1.2;
+    font-size: 40px;
+    line-height: 1.5;
   padding: 0.3em 0 0.1em;
 }
 .hy-p-120 {
@@ -1773,7 +1773,7 @@ figure {
 }
 .spin div {
   position: absolute;
-  top: 50%;
+  top: 210px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -1800,7 +1800,7 @@ figure {
       width: 100%;
     margin-bottom: 78px;
     margin-left: 6px;
-  height: auto;
+  height: 510px;
  
 }
 @media (min-width:1200px) and (max-width:1400px) {
@@ -1819,7 +1819,7 @@ figure {
         right: 20px !important;
     }
   .stone.g-stone {
-      left: 369px   !important;
+      left: 413px   !important;
 }
 .fire-info {
     top: -65px !important;
@@ -1831,15 +1831,15 @@ figure {
 }
 
     .stone.v-stone {
-        right: 125px !important;
+        right: 238px !important;
         top: 119px !important;
 
     }
 .stone.go-stone {
-    bottom: 80px !important;
-    top: unset;
-    left: 66% !important; 
-    right: 50% !important;
+            bottom: 17px !important;
+        top: unset;
+        left: 60% !important;
+            right: 50% !important;
     transform: translate(-50%, -50%);
 }
   
@@ -2073,13 +2073,13 @@ figure {
   -ms-transform: rotate(60deg) scale(0.5);
 }
 .chapter-icon span {
-  position: absolute;
-  width: 100%;
-  font-size: 14px;
-  top: 50%;
-  left: 0%;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+    position: absolute;
+    width: 100%;
+    font-size: 23px;
+    top: 55%;
+    left: 0%;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
 }
 .chapter-icon.in-view span {
   transform: translate(-50%, -50%);
@@ -2126,12 +2126,14 @@ figure {
 }
 
 #nav nav {
-  z-index: 99;
-  position: fixed;
-  top: 50px;
-  right: 7.14285vw;
-  text-align: right;
-  width: 70vw;
+    z-index: 99;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100vw;
 }
 #nav nav span {
   position: relative;
@@ -4898,12 +4900,11 @@ figure {
 section#banner-prt {
     position: relative;
     height:100vh;
-    padding-top: 335px;
-    padding-left: 249px;
+    padding-top: 190px;
 }
 .stone {
     position: absolute;
-    top: -29px;
+    top: -70px;
     width: 290px;
     z-index: 99;
 }
@@ -4916,11 +4917,11 @@ section#banner-prt {
 
 .stone.v-stone {
     right: 219px;
-    top: 141px;
+    top: 135px;
 }
 
 .stone.go-stone {
-    bottom: 117px;
+    bottom: 94px;
     top: unset;
     left: 62%;
     right: 50%;
@@ -5310,8 +5311,8 @@ button:hover{
 }
 
 .parallax-content p {
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Mobile Fix */
@@ -5986,16 +5987,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
     margin-bottom:10px;
     font-size:18px;
 }
-#banner-prt{
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px;
-    color: #fff;
-}
+
 
 .banner-video{
     position: absolute;
@@ -6021,8 +6013,8 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 /* SMALL SIDEBAR BOX */
 .stone-info{
     position: absolute;
-    width: 170px;
-    padding: 10px 15px;
+       width: 180px;
+    padding: 15px 15px;
     border-radius: 25px;
     background: rgba(80,40,10,0.35);
     border: 1px solid rgba(255,255,255,0.15);
@@ -6037,6 +6029,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
     font-size: 24px;
     margin-bottom: 10px;
     margin-top: 9px;
+    letter-spacing: 2px;
 }
 
 .stone-info h5{
@@ -6062,18 +6055,25 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 
 /* TOP LEFT BOX */
 .fire-info {
-    top: -53px;
-    left: 128px;
+    top: -70px;
+    left: 106px;
 }
 
 /* MIDDLE RIGHT BOX */
 .ether-info {
-    top: 96px;
-    right: 64px;
+      top: 110px;
+    right: 35px;
 }
 
 /* BOTTOM LEFT BOX */
 .earth-info {
-    bottom: 130px;
-    left: 125px;
+      bottom: 115px;
+    left: 106px;
+}
+span.icon img {
+    width: 45px;
+}
+.chapter-icon img {
+    border-radius: 60px 12px;
+    border: 1px solid #babcb7;
 }

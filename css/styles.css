@@ -2075,12 +2075,14 @@ figure {
 }
 
 #nav nav {
-  z-index: 99;
-  position: fixed;
-  top: 50px;
-  right: 7.14285vw;
-  text-align: right;
-  width: 70vw;
+    z-index: 99;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100vw;
 }
 #nav nav span {
   position: relative;
