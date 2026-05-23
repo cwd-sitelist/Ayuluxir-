@@ -1810,19 +1810,35 @@ figure {
     margin-left: 6px;
 
   }
+  .right-side-content {
+    width: 30% !important;
+    margin-top: -94px;
+}
+      .ether-info {
+        top: 62px !important;
+        right: 20px !important;
+    }
   .stone.g-stone {
-    left: 412px !important;
+      left: 369px   !important;
 }
-.stone.v-stone
+.fire-info {
+    top: -65px !important;
+    left: 66px !important;
+}
+.earth-info {
+    bottom: 84px !important;
+    left: 58px !important;
+}
 
- {
-    right: 250px !important;
-    top: 123px !important;
-}
+    .stone.v-stone {
+        right: 125px !important;
+        top: 119px !important;
+
+    }
 .stone.go-stone {
     bottom: 80px !important;
     top: unset;
-    left: 59% !important;
+    left: 66% !important; 
     right: 50% !important;
     transform: translate(-50%, -50%);
 }
@@ -4882,7 +4898,8 @@ figure {
 section#banner-prt {
     position: relative;
     height:100vh;
-    padding-top: 100px;
+    padding-top: 335px;
+    padding-left: 249px;
 }
 .stone {
     position: absolute;
@@ -5941,4 +5958,122 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
         font-size:17px;
         padding:22px;
     }
+}
+
+
+
+/* RIGHT CONTENT */
+.right-side-content{
+    width:22%;
+    margin-top: -94px;
+}
+
+.info-box{
+    margin-bottom:40px;
+}
+
+.info-box h3{
+    color:#d8a24a;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.info-box ul{
+    padding-left:20px;
+}
+
+.info-box li{
+    margin-bottom:10px;
+    font-size:18px;
+}
+#banner-prt{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    color: #fff;
+}
+
+.banner-video{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-2;
+}
+
+.banner-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+.center-prt{
+    position: relative;
+}
+
+/* SMALL SIDEBAR BOX */
+.stone-info{
+    position: absolute;
+    width: 170px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: rgba(80,40,10,0.35);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.stone-info h4{
+    color: #e2b35a;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 9px;
+}
+
+.stone-info h5{
+    font-size: 20px;
+    font-weight: 400;
+   margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.stone-info p{
+    font-size: 14px;
+    margin: 4px 0;
+    color: #e9e9e9;
+}
+
+.stone-info .icon{
+    display: block;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* POSITIONING */
+
+/* TOP LEFT BOX */
+.fire-info {
+    top: -53px;
+    left: 128px;
+}
+
+/* MIDDLE RIGHT BOX */
+.ether-info {
+    top: 96px;
+    right: 64px;
+}
+
+/* BOTTOM LEFT BOX */
+.earth-info {
+    bottom: 130px;
+    left: 125px;
 }
