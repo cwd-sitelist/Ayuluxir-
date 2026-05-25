@@ -5448,7 +5448,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
     position: relative;
     width: 100%;
     height: 550px;
-    background: url("../images/contact-banner.webp") center center/cover no-repeat;
+    background: url("../images/contact-banner.png") center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5744,6 +5744,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
     line-height:1.2;
     color:#2f382d;
     margin-bottom:20px;
+    letter-spacing: 1px;
 }
 
 .ayurveda-content p{
@@ -5783,6 +5784,8 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 .feature-box h4{
     color:#384538;
     font-size:18px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* BOOK BUTTON CENTER */
@@ -5808,7 +5811,8 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 }
 
 .book-btn:hover{
-    transform:translateY(-5px);
+   background:#384538;
+    color:#fff;
 }
 
 /* RESPONSIVE */
@@ -6024,7 +6028,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 }
 
 .stone-info h4{
-    color: #e2b35a;
+    color: #fff;
     font-size: 24px;
     margin-bottom: 10px;
     margin-top: 9px;
@@ -6075,4 +6079,10 @@ span.icon img {
 .chapter-icon img {
     border-radius: 60px 12px;
     border: 1px solid #babcb7;
+}
+
+.feature-box span img{
+      width:50px ;
+      height: 50px;
+
 }
