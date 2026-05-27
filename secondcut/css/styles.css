@@ -4863,8 +4863,8 @@ section#banner-prt {
     position: relative;
     height:100vh;
     padding-top: 335px;
-    
-    background: url("../images/banner-img.png") center center/cover no-repeat;
+/*     
+    background: url("../images/banner-img.png") center center/cover no-repeat; */
 }
 .stone {
     position: absolute;
