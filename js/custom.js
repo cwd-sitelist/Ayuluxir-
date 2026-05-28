@@ -27,9 +27,10 @@ document.documentElement.className="js";
 window.onbeforeunload = function () {
   window.scrollTo(0,0);
 };
+let locoScroll;
 const smoothScroll = function(){
   if(window.innerWidth > 1024){
-    const locoScroll = new LocomotiveScroll({
+    locoScroll = new LocomotiveScroll({
       el: document.querySelector(".content"),
       smooth: true,
     });
@@ -2343,44 +2344,21 @@ $(function(){
 
 
 
-gsap.registerPlugin(ScrollTrigger);
-
 gsap.to(".parallax-bg", {
-    y: 120,
+    y: 220,
     ease: "none",
-    scrollTrigger: {
+    scrollTrigger: Object.assign({
         trigger: ".parallax-section",
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-    }
+        invalidateOnRefresh: true,
+    }, window.innerWidth > 1024 ? { scroller: ".content" } : {})
 });
 
-ScrollTrigger.scrollerProxy(".content", {
-    scrollTop(value) {
-        return arguments.length
-            ? locoScroll.scrollTo(value, 0, 0)
-            : locoScroll.scroll.instance.scroll.y;
-    },
-
-    getBoundingClientRect() {
-        return {
-            top: 0,
-            left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight
-        };
-    },
-
-    pinType: document.querySelector(".content").style.transform
-        ? "transform"
-        : "fixed"
-});
-
-locoScroll.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
+if (window.innerWidth > 1024 && locoScroll) {
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+}
 ScrollTrigger.refresh();
 
 });
