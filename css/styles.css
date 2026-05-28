@@ -52,6 +52,7 @@
 }
 #hy-slider .hy-p-16 {
   text-transform: uppercase;
+  line-height: 1.4;
 }
 .siema-label {
   display: none;
@@ -150,6 +151,7 @@
 .slide-titles h4 {
   text-align: center;
   margin: 0;
+  color:#737b4c;
 }
 .slide-numbers {
   display: -webkit-box;
@@ -171,6 +173,10 @@
 .slide-numbers p {
   text-align: center;
   margin: 0;
+  color: #737b4c;
+}
+.testimonial-heading h3{
+  color:#9e5135;
 }
 .drag-label {
   font-size: 20px;
@@ -351,10 +357,10 @@
   padding: 25vh 0;
 }
 .t-offset-md {
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 .b-offset-md {
-  padding-bottom: 25vh;
+  padding-bottom: 15vh;
 }
 .hy-g {
   -webkit-box-flex: 0;
@@ -405,7 +411,7 @@
 }
 .hy-g-os-1 {
   margin-left: 7.14285vw;
-  color: #74786c ;
+  color: #9e5135 ;
 }
 .hy-g-os-2 {
   margin-left: 14.2857vw;
@@ -1123,13 +1129,17 @@ body {
   color: #fff;
 
 }
+.inner a:hover,a:focus{
+  color: #9e5135!important;
+
+}
 a {
   text-decoration: none;
   color: #204050;
   outline: none;
 }
 #logo img{
-  width: 170% !important;
+  width: 230% !important;
 }
 a:hover,
 a:focus {
@@ -1597,9 +1607,10 @@ h1 .hy-p-30.indent {
   margin: 0 0 1em 0;
 }
 h2 {
-  font-size: 14vw;
+  font-size: 7vw;
   line-height: 1;
   margin: 0;
+  margin-bottom: 20px;
 }
 h3 {
   font-size: 3.5vw;
@@ -1623,6 +1634,7 @@ figure {
 }
 .center {
   text-align: center;
+  color:#737b4c;
 }
 .centered {
   margin: 0 auto;
@@ -1652,6 +1664,7 @@ figure {
   font-family: "HY Body Regular", "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 1.3;
+  color:#000;
 }
 .hy-p-20.small {
   font-size: 14px;
@@ -1685,8 +1698,9 @@ figure {
 }
 .hy-p-60-serif {
   font-family: "HY Serif", serif;
-  font-size: 4.2vw;
-  line-height: 1.2;
+  /* font-size: 4.2vw; */
+    font-size: 35px;
+    line-height: 1.5;
   padding: 0.3em 0 0.1em;
 }
 .hy-p-120 {
@@ -1728,11 +1742,11 @@ figure {
   -o-transition: all 1500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .spin {
-  position: absolute;
-  width: 28.5714vw;
-  height: 28.5714vw;
-  top: -30%;
-  left: 85%;
+ position: absolute;
+    width: 35.5714vw;
+    height: 32.5714vw;
+    left: -53px;
+    top: -43px;
 }
 .spin > img {
   -webkit-transition: -webkit-transform 750ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1764,7 +1778,7 @@ figure {
 }
 .spin div {
   position: absolute;
-  top: 50%;
+  top: 210px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -1788,10 +1802,26 @@ figure {
   -ms-transform: translate(0%, 0%);
   position: static;
   opacity: 1;
-  width: 170px;
-  margin-bottom: 96px;
-  height: auto;
+      width: 100%;
+    margin-bottom: 78px;
+    margin-left: 6px;
  
+}
+@media (min-width:1200px) and (max-width:1400px) {
+
+  .stone.v-stone {
+    top: 18%;
+}
+.stone.go-stone {
+    top: unset;
+    bottom: 25%;
+}
+span.c-logo {
+    position: absolute;
+    left: 29.5% !important;
+    top: 12% !important;
+    transform: translate(-50%, -50%);
+}
 }
 #circle {
   pointer-events: none;
@@ -2022,13 +2052,13 @@ figure {
   -ms-transform: rotate(60deg) scale(0.5);
 }
 .chapter-icon span {
-  position: absolute;
-  width: 100%;
-  font-size: 14px;
-  top: 50%;
-  left: 0%;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+    position: absolute;
+    width: 100%;
+    font-size: 23px;
+    top: 55%;
+    left: 0%;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
 }
 .chapter-icon.in-view span {
   transform: translate(-50%, -50%);
@@ -2348,7 +2378,7 @@ figure {
 #hy-slider {
   position: relative;
    padding: 40px 0px 80px 0px;
-   background: #e4e7df;
+   background: #e9dec9;
 }
 
 #hy-slider > div {
@@ -2451,15 +2481,18 @@ figure {
 #zen-quote {
   width: 100%;
   overflow: hidden;
+  background-color: #e9dec9;
 }
 #zen-quote .zen-line {
   -webkit-perspective: 400px;
           perspective: 400px;
   width: 100%;
-  font-size: 13vw;
-  line-height: 1.05;
+  font-size: 9vw !important;
+  line-height: 1.05 !important;
   text-transform: none;
+  letter-spacing: 0px;
   display: inline-block;
+  color:#737b4c;
 }
 #zen-quote .zen-line + .center {
   margin-top: 2em;
@@ -2559,12 +2592,8 @@ figure {
   width: 85.7142vw;
   margin-left: 7.14285vw;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  
+  display:block;
 }
 #retreat-detail .trip-item-wrap article {
   -webkit-box-flex: 0;
@@ -2696,10 +2725,13 @@ figure {
   margin-bottom: 3rem;
 }
 #footer {
-  background-color: #e4e7df;
+  background-color: #e9dec9;
   overflow: hidden;
   padding: 10vh 0;
   
+}
+.footer-text{
+  color:#737b4c;
 }
 #footer .form-result {
   position: relative;
@@ -2754,6 +2786,7 @@ figure {
   -moz-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  color:#737b4c;
 }
 #footer ul a::before {
   content: "";
@@ -4846,36 +4879,37 @@ figure {
 section#banner-prt {
     position: relative;
     height:100vh;
-    padding-top: 100px;
+    padding-top: 190px;
 }
 .stone {
-    position: absolute;
-    top: 10px;
-    width: 290px;
+  position: absolute;
+    top: 14px;
+    left: 38%;
+    width: 240px;
     z-index: 99;
 }
 .stone img{
-  width: 60% !important;
+  width: 33% !important;
 }
-.stone.g-stone {
-    left: 174px;
-}
-
 .stone.v-stone {
-    right: 45px;
-    top: 8px;
+    top: 24%;
 }
 .stone.go-stone {
-    bottom: -110px;
-    top:unset;
-    left: 58%;
-    right: 50%;
-    transform: translate(-50%, -50%);
+    top: 48%;
+}
+.stone h4 {
+     color: #000;
+    letter-spacing: 1px;
+    font-size: 20px;
+    background: #fffff0;
+    border-radius: 10px 20px;
+    margin: -9px auto 0;
+    width: 110px;
 }
 span.c-logo {
     position: absolute;
-   left: 27%;
-    top: 6%;
+     left: 26.5%;
+    top: 15%;
     transform: translate(-50%, -50%);
 }
 .center-prt {
@@ -4883,6 +4917,7 @@ span.c-logo {
     position: relative;
     margin: 0 auto;
     height: calc(100vh - 131px);
+    text-align: center;
 }
 
 /* Video */
@@ -4906,7 +4941,7 @@ span.c-logo {
 
 .service-txt{
     text-align: center;
-    color: #74786c ;
+    color: #737b4c;
 
 }
 
@@ -4933,6 +4968,7 @@ span.c-logo {
         .testimonial-heading h2{
             font-size:45px;
             margin-bottom:10px;
+            color: #9e5135;
         }
 
         .testimonial-heading p{
@@ -4959,7 +4995,7 @@ span.c-logo {
             content:"";
             position:absolute;
             inset:0;
-            background: #e4e7df;
+            background: #e9dec9;
         }
 
         /* Content on image */
@@ -5159,7 +5195,7 @@ span.c-logo {
 
 button{
     width: 50%;
-    background: #74786c;
+    background: #e9dec9;
     color: #fff;
     border: none;
     padding: 18px;
@@ -5256,8 +5292,8 @@ button:hover{
 }
 
 .parallax-content p {
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Mobile Fix */
@@ -5307,7 +5343,801 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
     margin-top: 20px;
 }
 .heigt-sec {
-    padding: 30px 0px 0px;
+    padding: 0px 0px 0px;
     background: #e4e7df;
 }
 
+.about-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../images/about-banner.png') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.service-banner{
+   position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../images/event-banner.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+/* Center Content */
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.banner-content h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: serif;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #858a7c;
+}
+
+.breadcrumb span {
+    color: #fff;
+}
+
+.breadcrumb p {
+    color: #fff;
+    margin: 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-banner {
+        height: 350px;
+    }
+
+    .banner-content h1 {
+        font-size: 45px;
+    }
+
+    .banner-content h1::before {
+        width: 28px;
+        height: 55px;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+}
+
+
+
+.contact-banner {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: url("../images/contact-banner.png") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.contact-section{
+    background:#f3f3f3;
+    padding:80px 0;
+}
+.contact-section h2 {
+    font-size: 59px;
+    letter-spacing: 1px;
+    color: #9e5135;
+
+
+}
+.contact-section p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.contact-wrapper{
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.contact-form-area{
+    flex:1;
+    min-width:500px;
+}
+
+.contact-form-area h2{
+    font-size:60px;
+    font-weight:900;
+    color:#111;
+    margin-bottom:10px;
+    line-height: 1.1;
+}
+
+.contact-form-area p{
+    font-size:22px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:30px;
+}
+
+.contact-form-area form input,
+.contact-form-area form textarea{
+    width:100%;
+    background:#e9e9e9;
+    border:none;
+    padding:22px;
+    margin-bottom:20px;
+    font-size:18px;
+    outline:none;
+}
+
+.contact-form-area form textarea{
+    resize:none;
+}
+
+.contact-form-area button{
+    background:#9e5135 ;
+    color:#fff;
+    border:none;
+    padding:16px 40px;
+    cursor:pointer;
+    font-size:22px;
+}
+
+.contact-info-area{
+    flex:1;
+    min-width:400px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+   
+    align-content:start;
+    gap: 20px 43px;
+    margin-top: 20px;
+}
+
+
+.info-box{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.info-box .icon{
+    width:72px;
+    height:72px;
+    background:#9e5135 ;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px 20px;
+    margin-bottom:10px;
+}
+
+.info-box .icon i{
+    color:#fff;
+    font-size:30px;
+}
+
+.info-box h4{
+   font-size: 20px;
+   text-align: left;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.info-box p{
+    color:#000;
+    font-size : 18px;
+    line-height:1.5;
+    margin:0;
+    text-align: left;
+}
+.info-box p a{
+  color: #000;
+}
+
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+.info-box p a:hover{
+    color:#74786c ;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+    background:#ddd;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#111;
+    font-size:20px;
+}
+
+/* Mobile Responsive */
+@media(max-width:991px){
+    .contact-info-area{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+}
+
+/* Responsive */
+@media(max-width:991px){
+    .contact-wrapper{
+        flex-direction:column;
+    }
+
+    .contact-form-area,
+    .contact-info-area{
+        min-width:100%;
+    }
+
+    .contact-info-area{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form-area h2{
+        font-size:42px;
+    }
+}
+
+.map-section{
+    width:100%;
+    overflow:hidden;
+}
+
+.map-section iframe{
+    width:100%;
+    display:block;
+    border:none;
+}
+.social-icons a i:hover{
+  color: #74786c;
+}
+
+.ayurveda-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../images/ayurveda-banner.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.Wellness-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../images/wellness-banner.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.aesthetic-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../images/aesthetic-banner.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ayurveda-section{
+    position:relative;
+    padding:100px 8%;
+    background: linear-gradient(to right,#f6f6f3,#fff);
+    overflow:hidden;
+}
+
+.container-1{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* LEFT IMAGE */
+.ayurveda-image{
+    flex:1;
+    position:relative;
+}
+
+.ayurveda-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:30px;
+    animation: floatImage 4s ease-in-out infinite;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* Floating animation */
+@keyframes floatImage{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-18px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* RIGHT CONTENT */
+.ayurveda-content{
+    flex:1;
+}
+
+.tag{
+    background:#9e5135;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:50px;
+    font-size:14px;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.ayurveda-content h2{
+    font-size:52px;
+    line-height:1.2;
+    color:#2f382d;
+    margin-bottom:20px;
+    letter-spacing: 1px;
+}
+
+.ayurveda-content p{
+    font-size:17px;
+    line-height:1.9;
+    color:#666;
+    margin-bottom:35px;
+}
+
+/* FEATURES */
+.features{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.feature-box{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    min-width:160px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+}
+
+.feature-box span{
+    font-size:30px;
+    display:block;
+    margin-bottom:12px;
+}
+
+.feature-box h4{
+    color:#384538;
+    font-size:14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* BOOK BUTTON CENTER */
+.book-btn-wrap{
+    text-align:center;
+    margin-top:60px;
+}
+
+.book-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:180px;
+    height:60px;
+    background:#fff;
+    color:#737b4c;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    border-radius:60px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:.4s;
+}
+
+.book-btn:hover{
+   background:#9e5135;
+    color:#fff;
+}
+
+/* RESPONSIVE */
+@media(max-width:991px){
+
+    .container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .ayurveda-content h2{
+        font-size:40px;
+    }
+
+    .features{
+        justify-content:center;
+    }
+}
+
+@media(max-width:576px){
+
+    .ayurveda-section{
+        padding:70px 20px;
+    }
+
+    .ayurveda-content h2{
+        font-size:32px;
+    }
+
+    .feature-box{
+        width:100%;
+    }
+
+    .book-btn{
+        width:160px;
+        height:55px;
+    }
+}
+
+.ayurveda-faq{
+    background:#e9dec9;
+    padding:100px 8%;
+}
+
+.faq-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.faq-heading span{
+    display:inline-block;
+    background:#737b4c;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:50px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.faq-heading h2{
+    font-size:50px;
+    color:#737b4c;
+    margin-bottom:15px;
+}
+
+.faq-heading p{
+    max-width:650px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* FAQ BOX */
+.faq-wrapper{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    border-radius:20px;
+    margin-bottom:20px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+    transition:.3s;
+}
+
+.faq-item:hover{
+    transform:translateY(-3px);
+}
+
+.faq-question{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    padding:28px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:600;
+    color:#384538;
+    text-align:left;
+}
+
+.faq-question span{
+    font-size:28px;
+    color:#74786c;
+    transition:.3s;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.faq-answer p{
+    padding:0 30px 30px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* Active FAQ */
+.faq-item.active .faq-answer{
+    max-height:200px;
+}
+
+.faq-item.active .faq-question span{
+    transform:rotate(180deg);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .ayurveda-faq{
+        padding:70px 20px;
+    }
+
+    .faq-heading h2{
+        font-size:36px;
+    }
+
+    .faq-question{
+        font-size:17px;
+        padding:22px;
+    }
+}
+
+
+
+/* RIGHT CONTENT */
+.right-side-content{
+    width:22%;
+    margin-top: -94px;
+}
+
+.info-box{
+    margin-bottom:40px;
+}
+
+.info-box h3{
+    color:#d8a24a;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.info-box ul{
+    padding-left:20px;
+}
+
+.info-box li{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+
+.banner-video{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-2;
+}
+
+.banner-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+.center-prt{
+    position: relative;
+}
+
+/* SMALL SIDEBAR BOX */
+.stone-info{
+    position: absolute;
+       width: 180px;
+    padding: 15px 15px;
+    border-radius: 25px;
+    background: rgba(80,40,10,0.35);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.stone-info h4{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 9px;
+    letter-spacing: 2px;
+}
+
+.stone-info h5{
+    font-size: 20px;
+    font-weight: 400;
+   margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.stone-info p{
+    font-size: 14px;
+    margin: 4px 0;
+    color: #e9e9e9;
+}
+
+.stone-info .icon{
+    display: block;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* POSITIONING */
+
+/* TOP LEFT BOX */
+.fire-info {
+    top: -70px;
+    left: 106px;
+}
+
+/* MIDDLE RIGHT BOX */
+.ether-info {
+      top: 110px;
+    right: 35px;
+}
+
+/* BOTTOM LEFT BOX */
+.earth-info {
+      bottom: 115px;
+    left: 106px;
+}
+span.icon img {
+    width: 45px;
+}
+.chapter-icon img {
+    border-radius: 60px 12px;
+    border: 1px solid #babcb7;
+}
+
+.feature-box span img{
+      width:50px ;
+      height: 50px;
+
+}
+
+
+
+.trip-item-wrap {
+    width: 100%;
+}
+
+.trip-box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.trip-box.reverse {
+    flex-direction: row-reverse;
+}
+
+.trip-image {
+    width: 50%;
+}
+
+.trip-image img {
+    width: 100%;
+    display: block;
+    border-radius: 70px 10px;
+}
+
+.trip-content {
+    width: 50%;
+}
+
+.trip-content h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.trip-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color:#000;
+}
+
+.trip-content span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .trip-box,
+    .trip-box.reverse {
+        flex-direction: column;
+    }
+
+    .trip-image,
+    .trip-content {
+        width: 100%;
+    }
+}

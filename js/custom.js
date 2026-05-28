@@ -59,11 +59,6 @@ const smoothScroll = function(){
       });
     }
 
-
-
-// Run after page load
-window.addEventListener("load", smoothScroll);
-
     // tell ScrollTrigger to use these proxy methods for the ".content" element since Locomotive Scroll is hijacking things
     ScrollTrigger.scrollerProxy(".content", {
       scrollTop(value) {
