@@ -749,7 +749,7 @@ PageInits = {
     },
 
     dragSlider: function() {
-        if(window.innerWidth > 1024) {
+        if (document.querySelector('.js-slider')) {
 
         // SLIDER
         function _getClosest(item, array, getDiff) {
@@ -792,12 +792,16 @@ PageInits = {
               ease: options.ease || 0.1,
               speed: options.speed || 1.25,
               velocity: 0,
-              scroll: options.scroll || false
+              scroll: options.scroll || false,
+              autoplay: options.autoplay || false,
+              autoplayDelay: options.autoplayDelay || 1000
             }
 
             this.slider = document.querySelector('.js-slider')
             this.sliderInner = this.slider.querySelector('.js-slider__inner')
-            this.slides = [...this.slider.querySelectorAll('.js-slide')]
+            this.realSlides = [...this.slider.querySelectorAll('.js-slide')]
+            this.slides = [...this.realSlides]
+            this.realSlidesNumb = this.realSlides.length
             this.slidesNumb = this.slides.length
 
             this.rAF = undefined
@@ -812,6 +816,9 @@ PageInits = {
 
             this.min = 0
             this.max = 0
+            this.autoTimer = null
+            this.slideIndex = 0
+            this.looping = false
 
             this.centerX = window.innerWidth / 2
           }
@@ -820,7 +827,27 @@ PageInits = {
             ['setPos', 'run', 'on', 'off', 'resize'].forEach((fn) => this[fn] = this[fn].bind(this))
           }
 
+          getClientX(e) {
+            return e.touches ? e.touches[0].clientX : e.clientX
+          }
+
           setBounds() {
+            if (this.cloneSlide) {
+              this.cloneSlide.remove()
+              this.cloneSlide = null
+            }
+
+            this.realSlides = [...this.slider.querySelectorAll('.js-slide')]
+            this.realSlidesNumb = this.realSlides.length
+            this.slides = [...this.realSlides]
+
+            if (this.realSlidesNumb > 0) {
+              this.cloneSlide = this.realSlides[0].cloneNode(true)
+              this.cloneSlide.classList.add('js-slide-clone')
+              this.sliderInner.appendChild(this.cloneSlide)
+              this.slides.push(this.cloneSlide)
+            }
+
             const bounds = this.slides[0].getBoundingClientRect()
             const slideWidth = bounds.width
             if($(".slide-titles").length > 0) {
@@ -828,9 +855,11 @@ PageInits = {
             }
             const slideNumber = document.querySelector("#hy-slider .slide-numbers")
 
+            this.slideWidth = slideWidth
+            this.slidesNumb = this.slides.length
             this.sliderWidth = this.slidesNumb * slideWidth + (window.innerWidth / 2)
             this.max = -(this.sliderWidth - window.innerWidth)
-
+            this.slideIndex = this.getSlideIndex()
 
             this.slides.forEach((slide, index) => {
               slide.style.left = `${index * slideWidth}px`
@@ -840,7 +869,7 @@ PageInits = {
 
           setPos(e) {
             if (!this.isDragging) return
-            this.currentX = this.offX + ((e.clientX - this.onX) * this.opts.speed)
+            this.currentX = this.offX + ((this.getClientX(e) - this.onX) * this.opts.speed)
             this.clamp()
           }
 
@@ -848,9 +877,61 @@ PageInits = {
             this.currentX = Math.max(Math.min(this.currentX, this.min), this.max)
           }
 
+          getSlideIndex() {
+            if (!this.slideWidth) return 0
+            return Math.round(Math.min(Math.max(Math.abs(this.currentX) / this.slideWidth, 0), this.realSlidesNumb - 1))
+          }
+
+          goToSlide(index) {
+            if (!this.slideWidth) return
+            if (index >= this.realSlidesNumb) {
+              this.slideIndex = 0
+              this.currentX = -this.slideWidth * this.realSlidesNumb
+              this.looping = true
+            } else if (index < 0) {
+              this.goToSlide(this.realSlidesNumb - 1)
+              return
+            } else {
+              this.slideIndex = index
+              this.currentX = -this.slideWidth * index
+              this.looping = false
+            }
+            this.clamp()
+          }
+
+          nextSlide() {
+            if (!this.slideWidth) return
+            this.goToSlide(this.slideIndex + 1)
+          }
+
+          startAutoplay() {
+            if (!this.opts.autoplay) return
+            this.stopAutoplay()
+            this.autoTimer = setInterval(() => {
+              if (!this.isDragging) {
+                this.nextSlide()
+              }
+            }, this.opts.autoplayDelay)
+          }
+
+          stopAutoplay() {
+            if (this.autoTimer) {
+              clearInterval(this.autoTimer)
+              this.autoTimer = null
+            }
+          }
+
           run() {
             this.lastX = lerp(this.lastX, this.currentX, this.opts.ease)
             this.lastX = Math.floor(this.lastX * 100) / 100
+
+            if (this.looping && this.realSlidesNumb > 0 && Math.abs(this.lastX + this.slideWidth * this.realSlidesNumb) < 0.5) {
+              this.currentX = 0
+              this.lastX = 0
+              this.looping = false
+              this.slideIndex = 0
+              this.offX = 0
+            }
 
             const sd = this.currentX - this.lastX
             const acc = sd / window.innerWidth
@@ -859,40 +940,39 @@ PageInits = {
             this.sliderInner.style.transform = `translate3d(${this.lastX}px, 0, 0) skewX(${velo * this.opts.velocity}deg)`
 
             // TITLE SLIDES
-            const sliderTag = document.querySelectorAll('#hy-slider .js-slide')
-            const sliderLength = sliderTag.length
-
             const slideTitleInner = document.querySelector("#hy-slider .slide-titles .inner")
-            const sliderWidthVal = this.sliderWidth - window.innerWidth -170
-            let slidePerc = (this.lastX / sliderWidthVal * 100) * (1/sliderLength * (sliderLength-1))
+            const slideNumberInner = document.querySelector("#hy-slider .slide-numbers .inner")
+            const slideCount = this.realSlidesNumb || (slideTitleInner ? slideTitleInner.children.length : 1)
+            const activeIndex = this.looping ? 0 : this.getSlideIndex()
+            const titleOffset = (activeIndex * 100) / slideCount
+
             if ($(".slide-titles").length > 0) {
-              slideTitleInner.style.transform = `translateY(${slidePerc}%)`
-              //console.log(slideTitleInner.style.transform = `translateY(${slidePerc}%)`)
+              slideTitleInner.style.transform = `translateY(-${titleOffset}%)`
             }
 
             // TITLE numbers
-            const slideNumberInner = document.querySelector("#hy-slider .slide-numbers .inner")
             if ($("#hy-slider").length > 0) {
-              slideNumberInner.style.transform = `translateY(${slidePerc}%)`
+              slideNumberInner.style.transform = `translateY(-${titleOffset}%)`
             }
-
-
 
             this.requestAnimationFrame()
           }
 
           on(e) {
             this.isDragging = true
-            this.onX = e.clientX
+            this.onX = this.getClientX(e)
             this.slider.classList.add('is-grabbing')
+            this.stopAutoplay()
 
           }
 
           off(e) {
             this.snap()
             this.isDragging = false
+            this.slideIndex = this.getSlideIndex()
             this.offX = this.currentX
             this.slider.classList.remove('is-grabbing')
+            this.startAutoplay()
           }
 
           closest() {
@@ -918,6 +998,7 @@ PageInits = {
 
             this.currentX = this.currentX + closest
             this.clamp()
+            this.slideIndex = this.getSlideIndex()
           }
 
           requestAnimationFrame() {
@@ -941,26 +1022,29 @@ PageInits = {
             this.slider.addEventListener('mouseleave', this.off, false)
 
             window.addEventListener('resize', this.resize, false)
+            this.startAutoplay()
           }
 
           removeEvents() {
             this.cancelAnimationFrame(this.rAF)
 
             this.slider.removeEventListener('mousemove', this.setPos, { passive: true })
-            this.slider.addEventListener("touchmove", this.setPos, { passive: true });
+            this.slider.removeEventListener("touchmove", this.setPos, { passive: true });
             this.slider.removeEventListener('mousedown', this.on, false)
-            this.slider.addEventListener("touchstart", this.on, false);
+            this.slider.removeEventListener("touchstart", this.on, false);
             this.slider.removeEventListener('mouseup', this.off, false)
-            this.slider.addEventListener('touchend', this.off, false)
+            this.slider.removeEventListener('touchend', this.off, false)
             this.slider.removeEventListener('mouseleave', this.off, false)
           }
 
           resize() {
+            this.centerX = window.innerWidth / 2
             this.setBounds()
           }
 
           destroy() {
             this.removeEvents()
+            this.stopAutoplay()
 
             this.opts = {}
           }
@@ -971,7 +1055,7 @@ PageInits = {
           }
         }
 
-        const slider = new Slider()
+        const slider = new Slider({ autoplay: true, autoplayDelay: 5000 })
         slider.init()
         // END Slider
       }
@@ -1049,6 +1133,10 @@ PageInits = {
             ['setPos', 'run', 'on', 'off', 'resize'].forEach((fn) => this[fn] = this[fn].bind(this))
           }
 
+          getClientX(e) {
+            return e.touches ? e.touches[0].clientX : e.clientX
+          }
+
           setBounds() {
             const bounds = this.slides[0].getBoundingClientRect()
             const slideWidth = bounds.width
@@ -1065,7 +1153,7 @@ PageInits = {
 
           setPos(e) {
             if (!this.isDragging) return
-            this.currentX = this.offX + ((e.clientX - this.onX) * this.opts.speed)
+            this.currentX = this.offX + ((this.getClientX(e) - this.onX) * this.opts.speed)
             this.clamp()
           }
 
@@ -1088,7 +1176,7 @@ PageInits = {
 
           on(e) {
             this.isDragging = true
-            this.onX = e.clientX
+            this.onX = this.getClientX(e)
             this.slider.classList.add('is-grabbing')
           }
 
