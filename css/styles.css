@@ -30,7 +30,7 @@
   -webkit-transform-origin: 50% 0%;
   -o-transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
-  background-color: #204050;
+  background-color: #a05035;
   position: absolute;
   top: 50vh;
   left: 1.42857vw;
@@ -51,8 +51,8 @@
   display: none;
 }
 #hy-slider .hy-p-16 {
-  text-transform: uppercase;
   line-height: 1.4;
+  color:#000;
 }
 .siema-label {
   display: none;
@@ -151,7 +151,7 @@
 .slide-titles h4 {
   text-align: center;
   margin: 0;
-  color:#737b4c;
+  color:#a05035;
 }
 .slide-numbers {
   display: -webkit-box;
@@ -173,7 +173,7 @@
 .slide-numbers p {
   text-align: center;
   margin: 0;
-  color: #737b4c;
+  color: #a05035;
 }
 .testimonial-heading h3{
   color:#9e5135;
@@ -411,7 +411,7 @@
 }
 .hy-g-os-1 {
   margin-left: 7.14285vw;
-  color: #9e5135 ;
+  color: #000;
 }
 .hy-g-os-2 {
   margin-left: 14.2857vw;
@@ -737,7 +737,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  color: #204050;
+  color: #a05035;
   font-family: "HY Body Regular", "Montserrat", sans-serif;
   background-color: #fff;
   -ms-scroll-chaining: none;
@@ -1026,7 +1026,7 @@ body {
   margin-left: 50%;
   width: 1px;
   height: 120px;
-  background-color: #204050;
+  background-color: #a05035;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   z-index: 10;
@@ -1135,7 +1135,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #204050;
+  color: #a05035;
   outline: none;
 }
 #logo img{
@@ -1143,7 +1143,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #204050;
+  color: #a05035;
   outline: none;
 }
 ul,
@@ -1361,11 +1361,11 @@ a.button.in-view {
   -ms-transform: translateY(0);
 }
 a.button.faded {
-  color: #204050;
+  color: #a05035;
 }
 a.button.faded span {
   background-color: #EBE9DE;
-  color: #204050;
+  color: #a05035;
 }
 a.button.faded span::before {
   background-color: #e5e3d4;
@@ -1494,7 +1494,7 @@ a.text-link::before {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #204050;
+  background-color: #a05035;
   transform-origin: 100% 100%;
   -webkit-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%;
@@ -1521,7 +1521,7 @@ a.text-link::after {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #204050;
+  background-color: #a05035;
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   -o-transform-origin: 0 0;
@@ -1634,7 +1634,7 @@ figure {
 }
 .center {
   text-align: center;
-  color:#737b4c;
+  color:#a05035;
 }
 .centered {
   margin: 0 auto;
@@ -1742,10 +1742,10 @@ figure {
   -o-transition: all 1500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .spin {
- position: absolute;
-    width: 35.5714vw;
+    position: absolute;
+    width: 37.5714vw;
     height: 32.5714vw;
-    left: -53px;
+    left: -66px;
     top: -43px;
 }
 .spin > img {
@@ -1816,12 +1816,13 @@ figure {
     top: unset;
     bottom: 25%;
 }
+   
 span.c-logo {
     position: absolute;
     left: 29.5% !important;
     top: 12% !important;
     transform: translate(-50%, -50%);
-}
+} 
 }
 #circle {
   pointer-events: none;
@@ -2130,7 +2131,7 @@ span.c-logo {
   -ms-transform-origin: 0 0;
   width: 100%;
   height: 2px;
-  background-color: #204050;
+  background-color: #a05035;
   transition: all 650ms cubic-bezier(0.135, 0.75, 0.32, 1);
   -webkit-transition: all 650ms cubic-bezier(0.135, 0.75, 0.32, 1);
   -moz-transition: all 650ms cubic-bezier(0.135, 0.75, 0.32, 1);
@@ -2160,7 +2161,7 @@ span.c-logo {
   -ms-transform-origin: 0 0;
   width: 100%;
   height: 2px;
-  background-color: #204050;
+  background-color: #a05035;
   transform: scaleY(1);
   -moz-transform: scaleY(1);
   -webkit-transform: scaleY(1);
@@ -2373,12 +2374,12 @@ span.c-logo {
 }
 #intro .text-link {
   margin-top: 4em;
-  color: #000;
+  color: #a05035;
 }
 #hy-slider {
-  position: relative;
-   padding: 40px 0px 80px 0px;
-   background: #e9dec9;
+    position: relative;
+    padding: 40px 0px 80px 0px;
+    background: #e9dfc6;
 }
 
 #hy-slider > div {
@@ -2481,7 +2482,7 @@ span.c-logo {
 #zen-quote {
   width: 100%;
   overflow: hidden;
-  background-color: #e9dec9;
+  background-color: #e9dfc6;
 }
 #zen-quote .zen-line {
   -webkit-perspective: 400px;
@@ -2492,7 +2493,7 @@ span.c-logo {
   text-transform: none;
   letter-spacing: 0px;
   display: inline-block;
-  color:#737b4c;
+  color:#a05035;
 }
 #zen-quote .zen-line + .center {
   margin-top: 2em;
@@ -2725,13 +2726,13 @@ span.c-logo {
   margin-bottom: 3rem;
 }
 #footer {
-  background-color: #e9dec9;
+  background-color: #e9dfc6;
   overflow: hidden;
   padding: 10vh 0;
   
 }
 .footer-text{
-  color:#737b4c;
+  color:#000;
 }
 #footer .form-result {
   position: relative;
@@ -2786,7 +2787,7 @@ span.c-logo {
   -moz-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  color:#737b4c;
+  color:#a05035;
 }
 #footer ul a::before {
   content: "";
@@ -2805,7 +2806,7 @@ span.c-logo {
   -moz-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  background-color: #204050;
+  background-color: #a05035;
   transition: all 650ms cubic-bezier(0.135, 0.75, 0.32, 1);
   -webkit-transition: all 650ms cubic-bezier(0.135, 0.75, 0.32, 1);
   -moz-transition: all 650ms cubic-bezier(0.135, 0.75, 0.32, 1);
@@ -2833,9 +2834,9 @@ span.c-logo {
   line-height: 2em;
   font-size: 20px;
   border: none;
-  color: #204050;
+  color: #a05035;
   font-family: "HY Body Regular", "Montserrat", sans-serif;
-  border-bottom: 2px solid #204050;
+  border-bottom: 2px solid #a05035;
 }
 #footer input:focus {
   outline: none;
@@ -2846,7 +2847,7 @@ span.c-logo {
 }
 #footer input:-webkit-autofill:focus {
   -webkit-box-shadow: ,0 0 0 50px white inset;
-  -webkit-text-fill-color: #204050;
+  -webkit-text-fill-color: #a05035;
 }
 #footer .subscribe_form {
   position: relative;
@@ -3237,7 +3238,7 @@ span.c-logo {
   -ms-transform: rotate(90deg) scale(1.2);
 }
 .classes #schedule .schedule-table tr {
-  border-bottom: 1px solid #204050;
+  border-bottom: 1px solid #a05035;
 }
 .classes #schedule .schedule-table td {
   padding: 1.2em 0 1em;
@@ -3373,7 +3374,7 @@ span.c-logo {
   -webkit-transform: translateY(-28%);
   -o-transform: translateY(-28%);
   -ms-transform: translateY(-28%);
-  border: 1px solid #204050;
+  border: 1px solid #a05035;
   border-radius: 120px;
 }
 .error .cta-block {
@@ -3399,7 +3400,7 @@ span.c-logo {
     -webkit-transform: translateY(-28%);
     -o-transform: translateY(-28%);
     -ms-transform: translateY(-28%);
-    border: 1px solid #204050;
+    border: 1px solid #a05035;
     border-radius: 120px;
   }
   .error .cta-block {
@@ -3681,7 +3682,7 @@ span.c-logo {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #204050;
+  background-color: #a05035;
   transform-origin: 100% 100%;
   -webkit-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%;
@@ -3708,7 +3709,7 @@ span.c-logo {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #204050;
+  background-color: #a05035;
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   -o-transform-origin: 0 0;
@@ -3816,7 +3817,7 @@ span.c-logo {
 .retreat-description .inner {
   width: 85.7142vw;
   margin-left: 7.14285vw;
-  border-bottom: 1px solid #204050;
+  border-bottom: 1px solid #a05035;
 }
 .retreat-description .hy-g-5.view {
   -webkit-transition: -webkit-transform 1500ms cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -3852,7 +3853,7 @@ span.c-logo {
   font-size: 20px;
 }
 .retreat-details ul li {
-  border-bottom: 1px solid #204050;
+  border-bottom: 1px solid #a05035;
   margin: 0;
   padding: 1em 0 1em 1.5em;
   position: relative;
@@ -3885,7 +3886,7 @@ span.c-logo {
   line-height: 1em;
   padding: 0.1em 0;
   position: relative;
-  border-bottom: 1px solid #204050;
+  border-bottom: 1px solid #a05035;
 }
 #other-retreats li span {
   display: inline-block;
@@ -3989,7 +3990,7 @@ span.c-logo {
     left: 50%;
     width: 30px;
     height: 2px;
-    background-color: #204050;
+    background-color: #a05035;
     transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -4082,7 +4083,7 @@ span.c-logo {
     display: block;
     width: 7.14285vw;
     height: 1px;
-    background-color: #204050;
+    background-color: #a05035;
   }
   #nav nav span.active::before {
     display: none;
@@ -4400,7 +4401,7 @@ span.c-logo {
   }
   .classes #classlist .class-content {
     line-height: 1.2;
-    color: #204050;
+    color: #a05035;
     padding: 20px;
     position: relative;
   }
@@ -4440,7 +4441,7 @@ span.c-logo {
     margin-left: 0.3em;
   }
   .classes #schedule .schedule-table tr {
-    border-bottom: 1px solid #204050;
+    border-bottom: 1px solid #a05035;
   }
   .classes #schedule .schedule-table td {
     padding: 1.2em 0 1em;
@@ -4525,7 +4526,7 @@ span.c-logo {
     line-height: 1em;
     padding: 0.3em 0;
     position: relative;
-    border-bottom: 1px solid #204050;
+    border-bottom: 1px solid #a05035;
   }
   .retreat-detail #other-retreats li span {
     display: inline-block;
@@ -4775,7 +4776,7 @@ span.c-logo {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #204050;
+    background: #a05035;
     display: block;
 }
 
@@ -4798,7 +4799,7 @@ span.c-logo {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 8px;
-    color: #204050;
+    color: #a05035;
 }
 
 .input-group input,
@@ -4810,7 +4811,7 @@ span.c-logo {
     border-bottom: 1px solid rgba(32, 64, 80, 0.3);
     font-family: inherit;
     font-size: 16px;
-    color: #204050;
+    color: #a05035;
     outline: none;
     transition: border-color 0.3s ease;
 }
@@ -4821,25 +4822,25 @@ span.c-logo {
 
 .input-group input:focus,
 .input-group textarea:focus {
-    border-bottom-color: #204050;
+    border-bottom-color: #a05035;
 }
 
 .input-group input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #D4CEC0 inset;
-    -webkit-text-fill-color: #204050 !important;
+    -webkit-text-fill-color: #a05035 !important;
 }
 
 
 #retreat-signup-form .button {
     margin-top: 20px;
     width: 100%;
-    border: 1px solid #204050;
+    border: 1px solid #a05035;
     background: transparent;
     padding: 20px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    color: #204050;
+    color: #a05035;
     position: relative;
     overflow: hidden;
 }
@@ -4850,7 +4851,7 @@ span.c-logo {
     left: 0;
     width: 0;
     height: 100%;
-    background: #204050;
+    background: #a05035;
     z-index: -1;
     transition: width 0.4s ease;
 }
@@ -4883,7 +4884,7 @@ section#banner-prt {
 }
 .stone {
   position: absolute;
-    top: 14px;
+      top: -10px;
     left: 38%;
     width: 240px;
     z-index: 99;
@@ -4892,23 +4893,24 @@ section#banner-prt {
   width: 33% !important;
 }
 .stone.v-stone {
-    top: 24%;
+        top: 23%;
 }
 .stone.go-stone {
-    top: 48%;
+        top: 49%;
 }
 .stone h4 {
-     color: #000;
+    color: #a05035;
     letter-spacing: 1px;
     font-size: 20px;
-    background: #fffff0;
+    font-weight:bold;
+    background: #e9dfc6;
     border-radius: 10px 20px;
-    margin: -9px auto 0;
+    margin: 0px auto 0;
     width: 110px;
 }
 span.c-logo {
-    position: absolute;
-     left: 26.5%;
+       position: absolute;
+    left: 26.5%;
     top: 15%;
     transform: translate(-50%, -50%);
 }
@@ -4941,7 +4943,7 @@ span.c-logo {
 
 .service-txt{
     text-align: center;
-    color: #737b4c;
+    color: #a05035;
 
 }
 
@@ -4972,7 +4974,7 @@ span.c-logo {
         }
 
         .testimonial-heading p{
-            color:#666;
+            color:#000;
             font-size:18px;
         }
 
@@ -4995,7 +4997,7 @@ span.c-logo {
             content:"";
             position:absolute;
             inset:0;
-            background: #e9dec9;
+            background: #e9dfc6;
         }
 
         /* Content on image */
@@ -5012,6 +5014,7 @@ span.c-logo {
         }
 
         .testimonial-content h3{
+          color:#a05035;
             font-size:32px;
             margin-bottom:10px;
         }
@@ -5025,6 +5028,7 @@ span.c-logo {
         .testimonial-content span{
             font-size:15px;
             font-weight:600;
+            color:#a05035;
         }
 
        /* Center Pagination */
@@ -5048,7 +5052,7 @@ span.c-logo {
 
 /* Active Dot */
 .swiper-pagination-bullet-active {
-    background: #74786c !important ;
+    background: #a05035!important ;
     width: 30px;
     border-radius: 30px;
 }
@@ -5195,8 +5199,8 @@ span.c-logo {
 
 button{
     width: 50%;
-    background: #e9dec9;
-    color: #fff;
+    background: #e9dfc6;
+    color: #a05035;
     border: none;
     padding: 18px;
     border-radius: 50px;
@@ -5204,9 +5208,12 @@ button{
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
+    border:1px solid #e9dfc6;
 }
 
 button:hover{
+  background:#fffff0;  
+    border:1px solid #a05035;
     transform: translateY(-2px);
 }
 
@@ -5267,10 +5274,12 @@ button:hover{
 .parallax-content h2 {
     font-size: 52px;
     margin-bottom: 15px;
+    color:#fffff0;
 }
 
 .parallax-content p {
     font-size: 18px;
+     color:#fffff0;
 }
 
 
@@ -5452,7 +5461,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 
 
 .contact-section{
-    background:#f3f3f3;
+    background:#fffff0;
     padding:80px 0;
 }
 .contact-section h2 {
@@ -5795,7 +5804,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
     width:180px;
     height:60px;
     background:#fff;
-    color:#737b4c;
+    color:#a05035;
     text-decoration:none;
     font-size:18px;
     font-weight:600;
@@ -5847,7 +5856,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 }
 
 .ayurveda-faq{
-    background:#e9dec9;
+    background:#e9dfc6;
     padding:100px 8%;
 }
 
@@ -5858,7 +5867,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 
 .faq-heading span{
     display:inline-block;
-    background:#737b4c;
+    background:#a05035;
     color:#fff;
     padding:10px 20px;
     border-radius:50px;
@@ -5868,7 +5877,7 @@ html.js.has-scroll-init.has-scroll-smooth.has-scroll-scrolling #logo, html.js.ha
 
 .faq-heading h2{
     font-size:50px;
-    color:#737b4c;
+    color:#a05035;
     margin-bottom:15px;
 }
 
