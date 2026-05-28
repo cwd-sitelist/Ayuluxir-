@@ -37,25 +37,17 @@ const smoothScroll = function(){
     locoScroll.on("scroll", ScrollTrigger.update);
 
     const nav = document.querySelector("#nav");
-    let lastScrollY = 0;
     const getScrollY = () => locoScroll.scroll.instance?.scroll?.y || 0;
     if (nav) {
-      lastScrollY = getScrollY();
       locoScroll.on("scroll", () => {
         const currentScrollY = getScrollY();
-        const delta = currentScrollY - lastScrollY;
-        const isScrollingDown = delta > 30;
-        const isScrollingUp = delta < -120;
-        const nearTop = currentScrollY < 180;
-        const upperArea = currentScrollY < 420;
+        const hideThreshold = 20;
 
-        if (isScrollingDown && currentScrollY > 150) {
+        if (currentScrollY > hideThreshold) {
           nav.classList.add("hide");
-        } else if (nearTop || (isScrollingUp && upperArea)) {
+        } else {
           nav.classList.remove("hide");
         }
-
-        lastScrollY = currentScrollY;
       });
     }
 

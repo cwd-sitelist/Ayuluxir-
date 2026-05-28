@@ -1816,7 +1816,13 @@ figure {
     top: unset;
     bottom: 25%;
 }
-   
+   .spin {
+    position: absolute;
+    width: 38.5714vw;
+    height: 33.5714vw;
+    left: -71px;
+    top: -43px;
+}
 span.c-logo {
     position: absolute;
     left: 29.5% !important;
