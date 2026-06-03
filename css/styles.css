@@ -6211,3 +6211,30 @@ span.icon img {
         width: 100%;
     }
 }
+
+@media (max-width: 767px) {
+    .container-1 {
+        padding: 0 20px;
+        display: block;
+    }
+    .contact-right {
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 20px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+button {
+    width: 80% !important;
+    background: #e9dfc6;
+    color: #a05035;
+    border: none;
+    padding: 18px;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #e9dfc6;
+}
+} 
