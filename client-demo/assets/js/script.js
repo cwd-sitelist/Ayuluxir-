@@ -67,67 +67,67 @@ toggle.addEventListener("click",()=>{
 });
 
 
-$(document).ready(function() {
-  $("#owl-demo").owlCarousel({
-    autoplay: true,
-    autoplayTimeout: 3000,
-    loop:true,
-    items: 3,
-    margin: 20,   // 👈 space between items
-    responsive:{
-      0:{ items:1 },
-      768:{ items:2 },
-      1000:{ items:3 }
-    }
-  });
-});
+// $(document).ready(function() {
+//   $("#owl-demo").owlCarousel({
+//     autoplay: true,
+//     autoplayTimeout: 3000,
+//     loop:true,
+//     items: 3,
+//     margin: 20,   // 👈 space between items
+//     responsive:{
+//       0:{ items:1 },
+//       768:{ items:2 },
+//       1000:{ items:3 }
+//     }
+//   });
+// });
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const text = document.querySelector(".reveal-text");
-const words = text.innerText.split(" ");
-text.innerHTML = "";
+// const text = document.querySelector(".reveal-text");
+// const words = text.innerText.split(" ");
+// text.innerHTML = "";
 
-words.forEach(word => {
-  const span = document.createElement("span");
-  span.textContent = word + " ";
-  text.appendChild(span);
-});
+// words.forEach(word => {
+//   const span = document.createElement("span");
+//   span.textContent = word + " ";
+//   text.appendChild(span);
+// });
 
-const spans = document.querySelectorAll(".reveal-text span");
+// const spans = document.querySelectorAll(".reveal-text span");
 
-gsap.to(spans, {
-  opacity: 1,
-  stagger: 0.1,
-  ease: "none",
- scrollTrigger: {
-  trigger: ".reveal-section",
-  start: "top 40%",
-  end: "bottom 40%",
-  scrub: true,
-}
-});
+// gsap.to(spans, {
+//   opacity: 1,
+//   stagger: 0.1,
+//   ease: "none",
+//  scrollTrigger: {
+//   trigger: ".reveal-section",
+//   start: "top 40%",
+//   end: "bottom 40%",
+//   scrub: true,
+// }
+// });
 
 
 
-$(".testimonial-carousel").owlCarousel({
-  loop: true,
-  center: true,
-  margin: 20,
-  nav: true,
-    navText: [
-        '<i class="fa fa-arrow-left"></i>',
-        '<i class="fa fa-arrow-right"></i>'
-    ],
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 4000,
-  responsive:{
-    0:{ items:1 },
-    768:{ items:1.5 },
-    1200:{ items:2.5 }
-  }
-});
+// $(".testimonial-carousel").owlCarousel({
+//   loop: true,
+//   center: true,
+//   margin: 20,
+//   nav: true,
+//     navText: [
+//         '<i class="fa fa-arrow-left"></i>',
+//         '<i class="fa fa-arrow-right"></i>'
+//     ],
+//   dots: false,
+//   autoplay: true,
+//   autoplayTimeout: 4000,
+//   responsive:{
+//     0:{ items:1 },
+//     768:{ items:1.5 },
+//     1200:{ items:2.5 }
+//   }
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -158,32 +158,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-var swiper = new Swiper(".serviceSwiper", {
+var swiper = new Swiper(".wellnessSwiper", {
     slidesPerView: 3.5,
-    spaceBetween: 40,
+    spaceBetween: 35,
     loop: true,
     speed: 1000,
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
     },
 
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
 
     breakpoints: {
         0: {
-            slidesPerView: 1,
+            slidesPerView: 1
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 2
         },
         1200: {
-            slidesPerView: 3.5,
+            slidesPerView: 4
         }
     }
 });
