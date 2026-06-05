@@ -45,6 +45,10 @@ h1,h2,h3,h4,h5,h6 {
     background: transparent;
 }
 
+/* Center logo */
+
+
+
 .logo{
   font-size:24px;
   font-weight:700;
@@ -181,9 +185,36 @@ background: #4a8d8d7a;
 
 
 /* ================= MENU ================= */
-.logo img {
-    width: 38px;
+.scroll span a{
+    color: var(--primary-color);
 }
+.scroll span a:hover{
+    color: #fff;
+}
+.wellness-content a:hover{
+    color: #000;
+}
+
+.logo img {
+    width: 130px;
+
+}
+/* Show logo when scrolled */
+.scrolled .logo {
+    opacity: 1;
+}
+.header.scrolled{
+    background: var(--primary-color);
+}
+
+/* Center logo perfectly */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 .menu{
   position:fixed;
@@ -1579,7 +1610,7 @@ p.small {
 
 .description{
     max-width:850px;
-    margin: 0px auto 11px;
+    margin: 0px auto 20px;
     text-align:center;
     color:#54424d;
     font-size:16px;
