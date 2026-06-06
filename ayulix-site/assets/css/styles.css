@@ -8,7 +8,7 @@
   --text-color:#111;
   --secondary-color:#c5ad7d;
   --tertiary-color:#c5ad7d;
-  --primary-font:"playfair display";
+  --primary-font:"playfair display", sans-serif;
   --secondary-font:"montserrat", sans-serif;
 }
 *{
@@ -21,7 +21,7 @@
 
 body{
   overflow-x:hidden;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -1750,13 +1750,16 @@ p.small {
 .footer{
     background:#f4f1ed;
     color:#4a3d44;
-    font-family: 'Cormorant Garamond', serif;
 }
- 
+ .menu-right strong {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 18px;
+}
 .footer-top{
     max-width:1600px;
     margin:auto;
-    padding:30px 60px;
+    padding:40px 60px 30px;
     display:grid;
     grid-template-columns:1.4fr 1fr 1fr 1.3fr;
     gap:80px;
@@ -1783,7 +1786,7 @@ p.small {
 .footer-brand p{
     max-width:420px;
     margin:auto;
-    font-size:20px;
+    font-size:18px;
     line-height:1.7;
 }
  
@@ -1810,7 +1813,7 @@ p.small {
 .footer-links a{
     text-decoration:none;
     color:#4a3d44;
-    font-size:22px;
+    font-size:18px;
     transition:.3s;
 }
  
