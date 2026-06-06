@@ -354,11 +354,11 @@ p.reveal-text {
   }
 }
 
-.small-text{
-  font-size:18px;
-  letter-spacing:2px;
-  margin-bottom:15px;
-  color:var(--primary-color);
+.small-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
 }
 
 .main-title{
@@ -369,6 +369,7 @@ p.reveal-text {
 }
 .main-title img {
     width: 350px;
+    margin-bottom: 40px;
 }
 .tagline{
   font-size:16px;
@@ -1386,7 +1387,7 @@ p.small {
     max-width:720px;
     height:1px;
     background:#c2ab79;
-    margin:20px auto 40px;
+    margin:20px auto 15px;
     opacity:.6;
 }
  
@@ -1397,7 +1398,7 @@ p.small {
    
     line-height:1.1;
     color:#433741;
-    margin-bottom:35px;
+    margin-bottom:15px;
 }
  
 .about-us p{
@@ -1414,20 +1415,20 @@ p.small {
     font-weight:500;
 }
  
-.tune-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:15px;
-    margin-top: 30px;
+.tune-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 11px;
     padding: 8px 20px;
-    border:1px solid #c2ab79;
-    border-radius:50px;
-    text-decoration:none;
-    color:#c2ab79;
-    font-size:22px;
-    font-weight:400;
-    letter-spacing:1px;
-    transition:.3s;
+    border: 1px solid #c2ab79;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #c2ab79;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: .3s;
     margin-bottom: 110px;
 }
  
@@ -1460,6 +1461,7 @@ p.small {
 .about-us {
     position: relative;
     background: #fff;
+    background: url("../images/home/about-custom-img.webp") center center no-repeat;
     overflow: hidden;
     padding: 100px 0 350px;
 }
@@ -1468,6 +1470,7 @@ p.small {
     left: 50%;
     bottom: -460px;
     transform: translateX(-50%);
+    
     width: 850px;
     height: 850px;
     overflow: hidden;
@@ -1571,17 +1574,17 @@ p.small {
     margin-bottom:15px;
 }
 
-.divider{
-    width:45%;
-    height:1px;
-    background:#c9af82;
-    margin:0 auto 35px;
+.divider {
+    width: 45%;
+    height: 1px;
+    background: #c9af82;
+    margin: 0 auto 13px;
 }
-
 
 .concerns-grid{
     display:flex;
     justify-content:center;
+    background: url("../images/home/category-custom-image.webp") center center no-repeat;
     align-items:center;
     gap:40px;
     flex-wrap:wrap;
@@ -1721,7 +1724,7 @@ p.small {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 64px;
     flex-wrap: wrap;
 }
 
