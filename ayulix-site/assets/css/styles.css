@@ -412,10 +412,11 @@ color:var(--primary-color);
 .hero-bg{
   position:absolute;
   top:0;
+  background: #000;
   left:0;
       width: 100%;
     height: 100vh;
-   filter:brightness(0.29);
+   filter:brightness(0.50);
 }
 /*******************************section2**************************/
 /* img{
@@ -1765,6 +1766,15 @@ p.small {
     grid-template-columns:1.4fr 1fr 1fr 1.3fr;
     gap:80px;
 }
+@media (min-width:320px) and (max-width:767px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+    .footer-policy {
+        display: none !important;
+    }
+}
  
 .footer-brand{
     text-align:center;
@@ -1912,3 +1922,27 @@ p.small {
     font-family: var(--secondary-font);
 }
 
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Full visible background */
+    transform: translate(-50%, -50%);
+}
+
+.parallax-section {
+    height: 100vh; /* Full screen */
+    background-image: url('../images/home/parallex-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Parallax Effect */
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -11,17 +11,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="assets/css/styles.css" rel="stylesheet">
-<style>
-    .circle-wrapper {
-    width: 800px;
-    height: 800px;
-    margin: 0 auto;
-}
-.parallax-img {
-    background-image: url(assets/images/home/fooimg3.png) !important;
-}
-</style>
+
 </head>
 <body>
 
@@ -44,8 +36,8 @@
 <!-- HERO -->
  <section class="hero">
     <div class="hero-bg">
-  <video  id="heroVideo" autoplay muted loop playsinline preload="none">
-    <source src="assets/video/video.mp4" type="video/mp4">
+  <video  id="heroVideo" autoplay muted loop playsinline preload="none" class="bg-video">
+    <source src="assets/images/home/video-2.mp4" type="video/mp4">
   </video>
   <div class="smoke-wrapper">
   <div class="smoke smoke1"></div>
@@ -74,19 +66,19 @@
 <section class="about-us" id="about">
     <div class="about-container">
 
-        <div class="about-title">
+        <div class="about-title" data-aos="fade-right">
             <span>ABOUT US</span>
         </div>
 
-        <div class="title-line"></div>
+        <div class="title-line" data-aos="fade-right"></div>
 
-        <h2>Wellness And Holistic Clinic</h2>
+        <h2 data-aos="fade-right">Wellness And Holistic Clinic</h2>
 
-        <p>
+        <p data-aos="fade-right">
             <strong>At Ayuluxir, we combine traditional healing, wellness, and modern aesthetic care to create a complete mind and body rejuvenation experience.</strong> We believe true wellness begins with balance, harmony, and personalized care tailored to every individual.
         </p>
 
-        <a href="#" class="tune-btn">
+        <a href="#" class="tune-btn" data-aos="fade-right">
             
              Explore More
         </a>
@@ -94,7 +86,7 @@
     </div>
 
     <!-- Half Rotating Circle -->
-    <div class="rotating-image-section">
+    <div class="rotating-image-section" >
 
         <div class="circle-wrapper">
 
@@ -117,7 +109,7 @@
 
             <!-- Center Image -->
         <div class="center-image">
-            <img src="assets/images/home/crystal2.png" alt="image">
+            <img src="assets/images/home/crystal1.png" alt="image">
         </div>
 
         </div>
@@ -132,13 +124,11 @@
 
         <!-- Heading Area -->
         <div class="service-heading">
-            <span class="sub-title">OUR SERVICES</span>
+            <span class="sub-title" data-aos="fade-left">OUR SERVICES</span>
 
-            <div class="title-line"></div>
+            <div class="title-line" data-aos="fade-left"></div>
 
-            <h2 class="main-title">The Menu</h2>
-
-            <p class="description">
+            <p class="description" data-aos="fade-left">
                 Welcome to Ayuluxir, where Ayurveda, Wellness, and Aesthetics come together to create a holistic approach to health and beauty. 
                 <br> 
                 Our personalised approach honours the mind-body connection and
@@ -146,7 +136,7 @@
                 wellbeing.
             </p>
 
-            <a href="#" class="service-btn">
+            <a href="#" class="service-btn" data-aos="fade-left">
                 <span class="flower">✿</span>
                 Explore All Services
                 <span class="flower">✿</span>
@@ -156,7 +146,7 @@
         <!-- Slider Area -->
      
 
-    <div class="swiper wellnessSwiper">
+    <div class="swiper wellnessSwiper"  data-aos="fade-up">
 
         <div class="swiper-wrapper">
 
@@ -295,18 +285,18 @@
 
     <div class="container">
 
-        <span class="sub-title">CONCERNS</span>
+        <span class="sub-title" data-aos="fade-right">CONCERNS</span>
 
-        <div class="title-line"></div>
+        <div class="title-line" data-aos="fade-right"></div>
 
-        <p class="description">
+        <p class="description" data-aos="fade-right">
             Explore wellness by your needs, with therapies thoughtfully tailored to
             your specific concerns, from stress relief to recovery and rejuvenation.
             Step into a space where healing meets harmony and indulge in a luxury
             spa experience like no other.
         </p>
 
-        <div class="concerns-grid">
+        <div class="concerns-grid" data-aos="fade-up">
 
             <div class="concern-item">
                 <img src="assets/images/home/recovery.png" alt="">
@@ -338,19 +328,19 @@
 <section class="press-section">
     <div class="container">
 
-        <span class="section-subtitle">PRESS</span>
+        <span class="section-subtitle" data-aos="fade-left">PRESS</span>
 
-        <div class="title-line"></div>
+        <div class="title-line" data-aos="fade-left"></div>
 
-        <h2 class="main-title">Revolutionary Initiative</h2>
+        <h2 class="main-title" data-aos="fade-left">Revolutionary Initiative</h2>
 
-        <p class="section-desc">
+        <p class="section-desc" data-aos="fade-left">
             With wellness at its core, Dhun Wellness is setting a new benchmark in the
             industry. We are creating a space where luxury meets healing, and science
             meets spirituality.
         </p>
 
-        <div class="press-logos">
+        <div class="press-logos" data-aos="fade-up">
 
             <div class="logo-item">
                 <img src="assets/images/home/press-1.png" alt="Vogue India">
@@ -375,17 +365,17 @@
 <footer class="footer">
     <div class="footer-top">
  
-        <div class="footer-col footer-brand">
+        <div class="footer-col footer-brand" data-aos="fade-right">
            <img src="assets/images/home/main-logo.png">
  
-            <p>
+            <p data-aos="fade-right">
                 Experience the essence of natural healing and rejuvenation. At Ayuluxir, we blend timeless Ayurvedic traditions with modern wellness practices to nurture mind, body, and soul.
             </p>
  
          
         </div>
  
-        <div class="footer-col footer-links">
+        <div class="footer-col footer-links" data-aos="fade-up">
             <h3>Quick Links</h3>
             <a href="#">Home</a>
             <a href="#">About Us</a>
@@ -394,7 +384,7 @@
             <a href="#">Contact Us</a>
         </div>
  
-        <div class="footer-col footer-links">
+        <div class="footer-col footer-links" data-aos="fade-up">
             <h3>Services</h3>
             <a href="#">Ayuluxir Divine Body</a>
             <a href="#">Golden Harmony </a>
@@ -404,24 +394,24 @@
 
         </div>
  
-        <div class="footer-col footer-links">
+        <div class="footer-col footer-links" data-aos="fade-up">
  
-              <h3>Social Links</h3>
+              <h3 data-aos="fade-right">Social Links</h3>
  
-           <div class="contact-item">
+           <div class="contact-item" data-aos="fade-right">
     <h4>Phone Number</h4>
     <p>
         <a href="tel:+44 7345409977">+44 734540 9977</a>
     </p>
 </div>
-                  <div class="contact-item">
+                  <div class="contact-item" data-aos="fade-right">
     <h4>Mail Us </h4>
     <p>
         <a href="mailto:info@ayuluxir.co.uk">info@ayuluxir.co.uk</a>
     </p>
 </div>
  
-            <div class="contact-item">
+            <div class="contact-item" data-aos="fade-right">
                 <h4>Visit Us</h4>
                 <p>
                    155 Sutton Road , Wylde Green, Birmingham, B23 5TN
@@ -432,12 +422,12 @@
  
     </div>
  
-    <div class="footer-bottom">
-        <div class="copyright">
+    <div class="footer-bottom" data-aos="fade-up">
+        <div class="copyright" data-aos="fade-right">
             © 2026, Ayuluxir | All Rights Reserved
         </div>
  
-        <div class="footer-policy">
+        <div class="footer-policy" data-aos="fade-right">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
             <a href="#">Booking & Cancellation Policy</a>
@@ -514,12 +504,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   const heroVideo = document.getElementById("heroVideo");
 
 heroVideo.addEventListener("loadedmetadata", () => {
   heroVideo.playbackRate = 0.5;  // 0.5 = slower, 0.3 = cinematic slow, 1 = normal
 });
+</script>
+<script>
+  AOS.init({
+    duration: 2000, // 2 seconds
+    once: true
+  });
 </script>
 </body>
 </html>
