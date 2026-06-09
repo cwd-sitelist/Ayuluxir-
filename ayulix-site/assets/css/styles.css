@@ -1079,6 +1079,7 @@ p.small {
 }
  .header.active  svg.icon.icon-hamburger{
     stroke: #573a29;
+    width:30px;
 
  }
 
@@ -1222,7 +1223,7 @@ p.small {
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     transition: 0.3s;
     margin-bottom  : 30px;
@@ -1445,7 +1446,7 @@ p.small {
     border-radius: 50px;
     text-decoration: none;
     color: #5b3d2c;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
     transition: .3s;
@@ -1912,7 +1913,7 @@ p.small {
     backdrop-filter: blur(5px);
 }
 .book-btn:hover{
-    color: #000;
+    color:#c8b28a;
 }
 
  
