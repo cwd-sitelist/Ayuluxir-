@@ -1967,3 +1967,471 @@ p.small {
     justify-content: center;
     align-items: center;
 }
+
+
+/* Service */
+ .treatment-banner {
+    position: relative;
+    height: 500px;
+    background: url("../images/home/ayurveda-banner.webp") center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wellness-banner{
+     position: relative;
+    height: 500px;
+    background: url("../images/home/wellness-banner.webp") center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.aesthetic-banner{
+     position: relative;
+    height: 500px;
+    background: url("../images/home/aesthetic-banner.jpg") center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Content */
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.banner-content h1 {
+    color: #f5ece5;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+/* Bottom Curve */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+}
+
+
+
+
+.massage-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 60px 5%;
+}
+
+/* Left Image */
+.massage-image {
+    width: 52%;
+}
+
+.massage-image img {
+    width: 100%;
+    height: 760px;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+}
+
+/* Right Content */
+.massage-content {
+    width: 48%;
+    padding-top: 10px;
+}
+
+.massage-content h2 {
+    font-size: 38px;
+    font-weight: 300;
+    color: #4d4048;
+    line-height: 1.1;
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    
+}
+
+.duration {
+    color: #9d3b2c;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #d8d0ca;
+    margin: 35px 0;
+}
+
+.massage-content p {
+    font-size: 16px;
+    line-height: 2;
+    color: #6c6464;
+    font-family: var(--secondary-font);
+    margin-bottom: 30px;
+}
+
+/* Button */
+.button-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 45px;
+    width: 64%;
+}
+
+.book-btn-1 {
+    flex: 1;
+    height: 55px;
+    background: #9d2417;
+    color: #fff;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+.book-btn-1:hover {
+    background: transparent;
+    color: #573a29;
+    border: 1px solid #573a29;
+}
+.whatsapp-btn:hover {
+    background: transparent;
+    color: #573a29;
+    border: 1px solid #573a29;
+}
+.whatsapp-btn {
+    width: 68px;
+    height: 68px;
+    background: #9d2417;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.therapy-table-wrap {
+    margin-top: 40px;
+}
+
+.therapy-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.therapy-table tr {
+    border-bottom: 1px solid #ddd3cc;
+}
+
+.therapy-table td {
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+/* Name */
+.therapy-name {
+    width: 60%;
+    font-size: 16px;
+    color: #4d4048;
+    line-height: 1.4;
+}
+
+.therapy-name small {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Time */
+.therapy-time {
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    color: #6f6666;
+    white-space: nowrap;
+}
+
+/* Price */
+.therapy-price {
+    width: 20%;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+    color: #9d2417;
+}
+
+/* Mobile */
+@media(max-width:768px) {
+    .therapy-name {
+        font-size: 16px;
+    }
+
+    .therapy-time,
+    .therapy-price {
+        font-size: 15px;
+    }
+}
+
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    .massage-section {
+        flex-direction: column;
+    }
+
+    .massage-image,
+    .massage-content {
+        width: 100%;
+    }
+
+    .massage-image img {
+        height: 450px;
+    }
+
+    .massage-content h2 {
+        font-size: 42px;
+    }
+
+    .benefit-item {
+        font-size: 28px;
+    }
+}
+
+
+/* ayuverda-parallex */
+
+
+/* Ayurveda Parallax Section */
+.ayurveda-parallax {
+    position: relative;
+    height: 80vh;
+    background: url("../images/home/ayuverda-parallex.jpg") center center/cover no-repeat;
+    background-attachment: fixed; /* Parallax Effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wellness-parallax {
+     position: relative;
+    height: 80vh;
+    background: url("../images/home/wellness-parallex.jpg") center center/cover no-repeat;
+    background-attachment: fixed; /* Parallax Effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.aesthetic-parallax {
+     position: relative;
+    height: 80vh;
+    background: url("../images/home/aesthetic-parallax.jpg") center center/cover no-repeat;
+    background-attachment: fixed; /* Parallax Effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+.parallax-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Content */
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.parallax-content h2 {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.parallax-content p {
+    font-size: 22px;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .ayurveda-parallax {
+        height: 50vh;
+        background-attachment: scroll;
+    }
+
+    .parallax-content h2 {
+        font-size: 40px;
+    }
+
+    .parallax-content p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+.ayurveda-contact-section {
+    padding: 100px 5% 60px;
+    background: #ffff;
+}
+
+/* Heading */
+.section-heading {
+    text-align: center;
+    max-width: 40%;
+    margin: auto;
+}
+
+.section-heading span {
+    font-size: 18px;
+    color: var(--tertiary-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 55%;
+    height: 1px;
+    background: #573a29;
+    margin: 20px auto 10px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #463942;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.section-heading p {
+    font-size: 20px;
+   color: #4b4350;
+   font-family: var(--secondary-font);
+    
+}
+
+/* Cards */
+.contact-boxes {
+    display: flex;
+    gap: 35px;
+    margin-top: 80px;
+}
+
+.contact-card {
+    flex: 1;
+    background: #f9f5f1;
+    border: 1px solid #eadfd5;
+    border-radius: 25px;
+    padding: 50px 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card h3 {
+    font-size: 32px;
+    color: #4b3c45;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #9d2417;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* Bottom */
+.bottom-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 70px;
+    padding-top: 35px;
+    border-top: 1px solid #b9aca4;
+    color: #5c5555;
+    font-size: 22px;
+    flex-wrap: wrap;
+}
+
+.divider-vertical {
+    width: 1px;
+    height: 40px;
+    background: #8f8179;
+}
+
+/* Responsive */
+@media(max-width:991px) {
+
+    .contact-boxes {
+        flex-direction: column;
+    }
+
+    .section-heading h2 {
+        font-size: 42px;
+    }
+
+    .section-heading p {
+        font-size: 18px;
+    }
+
+    .contact-card h3 {
+        font-size: 30px;
+    }
+
+    .bottom-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .divider-vertical {
+        display: none;
+    }
+}
