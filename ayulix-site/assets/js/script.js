@@ -181,3 +181,19 @@ var swiper = new Swiper(".wellnessSwiper", {
         }
     }
 });
+
+
+var swiper = new Swiper(".testimonial-slider", {
+    slidesPerView: 2,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    }
+})
