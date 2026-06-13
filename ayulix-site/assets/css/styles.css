@@ -3125,7 +3125,7 @@ p.small {
 }
 
 .contact-block-content {
-    padding: 60px 25px;
+    padding: 30px 25px 20px;
     text-align: center;
     border-radius: 12px;
     background: #5e3f2e;
@@ -3146,9 +3146,8 @@ p.small {
     margin-bottom: 10px;
     line-height: 1.2;
 }
-
 .contact-content {
-    font-size: 14px !important;
+    font-size: 18px !important;
     color: #fff;
     
 }
@@ -3159,6 +3158,7 @@ p.small {
 .small-content:hover{
     color:#ddd;
 }
+
 
 @media (max-width: 768px) {
     .contact-block-wrapper {
