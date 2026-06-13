@@ -95,7 +95,7 @@ svg.icon.icon-hamburger {
     stroke: #fff;
 }
 svg.icon.icon-hamburger:hover {
-    stroke: #362318;
+    
     cursor: pointer;
 }
 /* .menu-toggle:hover{
@@ -2123,8 +2123,8 @@ p.small {
 }
 .whatsapp-btn:hover {
     background: transparent;
-    color: #573a29;
-    border: 1px solid #573a29;
+    color: #45c556;
+    border: 1px solid #45c556;
 }
 .whatsapp-btn {
     width: 68px;
@@ -3156,7 +3156,7 @@ p.small {
     font-size: 11px;
 }
 .small-content:hover{
-    color:#000;
+    color:#ddd;
 }
 
 @media (max-width: 768px) {
