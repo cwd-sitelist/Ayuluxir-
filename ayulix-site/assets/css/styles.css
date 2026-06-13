@@ -3253,3 +3253,47 @@ p.small {
      background-color: var(--tertiary-color) ;
 
 }
+
+/* Bottom Buttons */
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.nav-btn {
+    padding: 14px 30px;
+    border: 1px solid #7a5a50;
+    background: transparent;
+    color: #7a5a50;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 0.4s ease;
+}
+
+.nav-btn:hover {
+    background: #7a5a50;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content h2 {
+        font-size: 38px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .slider-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-btn {
+        width: 220px;
+    }
+}
