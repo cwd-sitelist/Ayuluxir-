@@ -3148,10 +3148,9 @@ p.small {
 }
 
 .contact-content {
-    font-size: 16px !important;
-    letter-spacing: 1px;
+    font-size: 14px !important;
     color: #fff;
-    text-transform: uppercase;
+    
 }
 
 .small-content {
