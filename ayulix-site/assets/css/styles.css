@@ -2849,16 +2849,18 @@ p.small {
 }
 /* Card */
 .testimonial-card {
-    height: 250px;
+    height: 170px;
     position: relative;
     text-align: center;
-    padding: 50px 30px;
+    padding: 20px 30px;
+
 }
 
 .testimonial-content h3 {
-    color: #9e5135;
-    font-size: 42px;
-    margin-bottom: 15px;
+    color: var(--tertiary-color);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
     font-family: var(--primary-font);
 }
 
@@ -2866,8 +2868,8 @@ p.small {
     font-size: 18px;
     line-height: 1.7;
     font-family: var(--secondary-font);
-    color: #333;
-    margin-bottom: 15px;
+    color: #000;
+    margin-bottom: 10px;
 }
 
 .testimonial-content span {
