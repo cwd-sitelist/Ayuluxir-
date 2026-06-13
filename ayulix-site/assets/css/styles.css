@@ -18,6 +18,9 @@
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
+.menu-item {
+    color: var(--tertiary-color) !important;
+}
 
 body{
   overflow-x:hidden !important;
@@ -92,7 +95,7 @@ svg.icon.icon-hamburger {
     stroke: #fff;
 }
 svg.icon.icon-hamburger:hover {
-    stroke: #573a29;
+    stroke: #362318;
     cursor: pointer;
 }
 /* .menu-toggle:hover{
@@ -829,8 +832,9 @@ p.small {
 
 footer.footer {
     background: #f8f3ed;
-    /* margin-top: 40px; */
+    
 }
+
 .foo-menus .col-md-4{
   padding-left: 4%;
 }
@@ -1387,7 +1391,7 @@ p.small {
 .about-container{
     max-width:850px;
     margin:0 auto;
-        padding-bottom: 0px;
+        padding-bottom: 60px;
 }
  
 .about-title span{
@@ -1434,6 +1438,9 @@ p.small {
      display: inline-flex;
     align-items: center;
     gap: 15px;
+    position: absolute;
+    z-index: 99999999;
+    left: 43%;
     padding: 8px 30px;
     border: 1px solid #5b3d2c;
     border-radius: 50px;
@@ -1693,7 +1700,7 @@ p.small {
 /* press */
 .press-section {
     background: #fff;
-    padding: 30px 0;
+    padding: 70px 0;
     text-align: center;
 }
 
@@ -2107,6 +2114,7 @@ p.small {
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
+    transition: all 0.4s ease;
 }
 .book-btn-1:hover {
     background: transparent;
@@ -2193,7 +2201,11 @@ p.small {
     }
 }
 
-
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
 /* Responsive */
 @media (max-width: 991px) {
@@ -2301,7 +2313,7 @@ p.small {
     }
 }
 .ayurveda-contact-section {
-    padding: 100px 5% 60px;
+    padding: 30px 5% 30px;
     background: #ffff;
 }
 /* Heading */
@@ -2335,7 +2347,7 @@ p.small {
 
 .section-heading p {
     font-size: 20px;
-   color: #4b4350;
+   color: #000;
    font-family: var(--secondary-font);
     
 }
@@ -2549,7 +2561,7 @@ p.small {
 /* Highlight Text */
 .highlight-text{
     max-width:850px;
-    margin:40px auto 0;
+    margin:15px auto 0;
     color:#583a29;
     font-size:16px;
     line-height:1.8;
@@ -2800,107 +2812,112 @@ p.small {
     }
 }
 
-
-.testimonial-section{
-    padding:100px 0;
+.testimonial-section {
+    padding: 80px 0 50px;
+    background: #f5f5f5;
 }
 
-.testimonial-section .container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
+.container {
+    width: 86%;
+    max-width: 1400px;
+    margin: auto;
 }
 
-.section-heading{
-    text-align:center;
-    margin-bottom:60px;
+/* Heading */
+.testimonial-heading {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.section-heading h2{
-    font-family:var(--primary-font);
-    font-size:40px;
-    color:#b46b4f;
-    font-weight:400;
-    margin-bottom:10px;
+.testimonial-heading h2 {
+    font-size: 40px;
+    color: #9e5135;
+
+    margin-bottom: 10px;
+    font-family: var(--primary-font);
 }
 
-.section-heading h3{
-    font-family:var(--secondary-font);
-    font-size:16px;
-    color:#1f1f1f;
-    font-weight:400;
+.testimonial-heading p {
+    font-size: 20px;
+    color: #000;
+    font-family: var(--secondary-font);
 }
 
-.testimonial-card{
-    background:#ddd3bb;
-    border-radius:25px;
-    padding:60px 40px;
-    text-align:center;
-    min-height:280px;
-    color  : var(--tertiary-color);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-    transition:0.4s ease;
+.testimonial-carousel .item{
+    background: #e9dfc6;
+    border-radius: 20px;
+}
+/* Card */
+.testimonial-card {
+    height: 250px;
+    position: relative;
+    text-align: center;
+    padding: 50px 30px;
 }
 
-
-.testimonial-card h4{
-    font-family:'Cormorant Garamond', serif;
-    font-size:52px;
-    color:#b46b4f;
-    margin-bottom:25px;
-    font-weight:400;
+.testimonial-content h3 {
+    color: #9e5135;
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-family: var(--primary-font);
 }
 
-.testimonial-card p{
-    font-size:22px;
-    line-height:1.8;
-    color:#222;
-    margin-bottom:20px;
+.testimonial-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: var(--secondary-font);
+    color: #333;
+    margin-bottom: 15px;
 }
 
-.testimonial-card span{
-    color:#b46b4f;
-    font-size:22px;
-    font-weight:500;
+.testimonial-content span {
+    color: #9e5135;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.swiper-pagination{
-    position:relative;
-    margin-top:40px;
+/* Equal Space */
+.testimonial-carousel .item {
+    padding: 0 8px;
 }
 
-.swiper-pagination-bullet{
-    width:10px;
-    height:10px;
-    background:#bdbdbd;
-    opacity:1;
+/* Dots */
+.owl-dots {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.swiper-pagination-bullet-active{
-    background:#a65c3b;
+.owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    display: block;
+    background: #c7c7c7;
+    border-radius: 50%;
 }
 
-@media(max-width:991px){
+.owl-dot.active span {
+    width: 30px;
+    border-radius: 30px;
+    background: #9e5135;
+}
 
-    .section-heading h2{
-        font-size:50px;
-    }
-
-    .section-heading h3{
+/* Mobile */
+@media(max-width:767px){
+    .testimonial-heading h2{
         font-size:32px;
     }
 
-    .testimonial-card h4{
-        font-size:38px;
+    .testimonial-card{
+        height:auto;
+        padding:40px 25px;
     }
 
-    .testimonial-card p{
-        font-size:18px;
+    .testimonial-content h3{
+        font-size:28px;
     }
 }
+
 .therapy-section {
     background: #fff;
     padding: 70px 0;
@@ -2976,6 +2993,7 @@ p.small {
     font-weight: 500;
     min-width: 155px;     /* same width */
     text-align: center;
+    height: 55px;
     
 }
 
@@ -3105,12 +3123,13 @@ p.small {
 }
 
 .contact-block-content {
-    padding: 35px 25px;
+    padding: 60px 25px;
     text-align: center;
     border-radius: 12px;
     background: #5e3f2e;
-    transition: all 0.3s ease;
+   
     cursor: pointer;
+    height: 186px;
 }
 
 .contact-block-content:hover {
@@ -3118,15 +3137,16 @@ p.small {
 }
 
 .contact-title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
     color: #fff;
+    font-family: var(--primary-font);
     margin-bottom: 10px;
     line-height: 1.2;
 }
 
 .contact-content {
-    font-size: 13px;
+    font-size: 16px !important;
     letter-spacing: 1px;
     color: #fff;
     text-transform: uppercase;
@@ -3134,6 +3154,9 @@ p.small {
 
 .small-content {
     font-size: 11px;
+}
+.small-content:hover{
+    color:#000;
 }
 
 @media (max-width: 768px) {
@@ -3223,4 +3246,10 @@ p.small {
     .contact-form.style-4 .form-title {
         font-size: 26px;
     }
+}
+
+.tune-btn:hover{
+     color:#fff !important;
+     background-color: var(--tertiary-color) ;
+
 }

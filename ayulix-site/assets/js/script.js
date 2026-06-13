@@ -183,17 +183,26 @@ var swiper = new Swiper(".wellnessSwiper", {
 });
 
 
-var swiper = new Swiper(".testimonial-slider", {
-    slidesPerView: 2,
-    spaceBetween: 0,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+$('.testimonial-carousel').owlCarousel({
+    loop: true,
+    margin: 15, // equal center spacing
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+
+    responsive: {
+        0: {
+            items: 1,
+            margin: 10
+        },
+        768: {
+            items: 2,
+            margin: 15
+        }
     }
-})
+});
+
+
