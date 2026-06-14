@@ -881,6 +881,9 @@ video#heroVideo {
 }
 }
 @media(max-width:1400px){
+    .btnn {
+    padding: 18px 20px !important;
+    }
 .title {
     font-size: 45px;
 }
@@ -1974,7 +1977,7 @@ p.small {
  .treatment-banner {
     position: relative;
     height: 500px;
-    background: url("../images/home/ayurbanner2.png") center center/cover no-repeat;
+    background: url("../images/home/ayur.png") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
