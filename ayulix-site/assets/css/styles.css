@@ -1974,7 +1974,7 @@ p.small {
  .treatment-banner {
     position: relative;
     height: 500px;
-    background: url("../images/home/ayurveda-banner.webp") center center/cover no-repeat;
+    background: url("../images/home/ayurbanner2.png") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1983,7 +1983,7 @@ p.small {
 .wellness-banner{
      position: relative;
     height: 500px;
-    background: url("../images/home/wellness-banner.webp") center center/cover no-repeat;
+    background: url("../images/home/welnesbanenr.png") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1993,7 +1993,7 @@ p.small {
 .aesthetic-banner{
      position: relative;
     height: 500px;
-    background: url("../images/home/aesthetic-banner.jpg") center center/cover no-repeat;
+    background: url("../images/home/aestheticbaner.png") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2239,7 +2239,7 @@ p.small {
 .ayurveda-parallax {
     position: relative;
     height: 80vh;
-    background: url("../images/home/ayuverda-parallex.jpg") center center/cover no-repeat;
+    background: url("../images/home/bannerayur.png") center center/cover no-repeat;
     background-attachment: fixed; /* Parallax Effect */
     display: flex;
     justify-content: center;
@@ -2250,7 +2250,7 @@ p.small {
 .wellness-parallax {
      position: relative;
     height: 80vh;
-    background: url("../images/home/wellness-parallex.jpg") center center/cover no-repeat;
+    background: url("../images/home/wellness-na.png") center center/cover no-repeat;
     background-attachment: fixed; /* Parallax Effect */
     display: flex;
     justify-content: center;
@@ -2260,7 +2260,7 @@ p.small {
 .aesthetic-parallax {
      position: relative;
     height: 80vh;
-    background: url("../images/home/aesthetic-parallax.jpg") center center/cover no-repeat;
+    background: url("../images/home/wellness.png") center center/cover no-repeat;
     background-attachment: fixed; /* Parallax Effect */
     display: flex;
     justify-content: center;
@@ -2448,7 +2448,7 @@ p.small {
 .service-hero{
     position: relative;
     height: 450px;
-    background: url("../images/home/service-banner.webp") center/cover;
+    background: url("../images/home/servicebanner.png") center/cover;
 }
 
 .overlay {
