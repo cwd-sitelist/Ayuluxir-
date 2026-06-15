@@ -460,7 +460,7 @@
   }
 
   .btnn {
-    width: 100%;
+    width: 70%;
   }
 
   /* Wellness Cards */
@@ -545,7 +545,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     transition: all 0.4s ease;
 }
@@ -580,7 +580,7 @@
     color: #fff;
 }
 .whatsapp-btn {
-    width: 68px;
+    width: 55px;
     height: 55px;
     background: #9d2417;
     border-radius: 50%;
