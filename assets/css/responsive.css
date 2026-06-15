@@ -28,7 +28,23 @@
   .header {
     padding: 12px 20px;
   }
-
+  .description {
+    max-width: 100%;
+    margin: 0px auto 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #5c4c57;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+.section-desc {
+    max-width: 100%;
+    margin: 0 auto 60px;
+    font-family: var(--secondary-font);
+    color: #564753;
+    font-size: 16px;
+    line-height: 1.8;
+}
   .logo img {
     width: 110px;
   }
@@ -173,7 +189,7 @@
 
   /* Footer */
   .footer-top {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 40px;
     padding: 40px 30px;
   }
@@ -218,6 +234,13 @@
     width: 100%;
     padding: 0px 15px ;
   }
+  .overlay h1 {
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    padding-top: 50px;
+}
   .press-section {
     background: #fff;
     padding: 0px 0;
@@ -301,6 +324,22 @@
     font-size: 14px;
     line-height: 1.7;
 }
+.why-choose {
+    padding: 39px 8%;
+    background: #f8f8f8;
+}
+
+.why-content h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+.why-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #333;
+}
 .service-btn {
     display: inline-flex;
     align-items: center;
@@ -316,7 +355,6 @@
     transition: 0.3s;
     margin-bottom: 30px;
 }
-
 
   /* Menu */
   .menu-inner {
@@ -340,7 +378,7 @@
 
   /* Hero */
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     padding: 120px 20px 60px;
   }
 
@@ -486,6 +524,62 @@
     padding: 40px 20px;
     gap: 30px;
   }
+  .book-btn-1 {
+    flex: 1;
+    height: 55px;
+    background: #9d2417;
+    color: #fff;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.4s ease;
+}
+.contact-boxes {
+    display: flex;
+    gap: 35px;
+    margin-top: 37px;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px !important;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, .6);
+    margin-bottom: 0px;
+}
+.contact-block-content {
+    padding: 30px 25px 20px;
+    text-align: center;
+    border-radius: 12px;
+    background: #5e3f2e;
+    cursor: pointer;
+    height: 142px;
+}
+.contact-content {
+    font-size: 16px !important;
+    color: #fff;
+}
+.whatsapp-btn {
+    width: 68px;
+    height: 55px;
+    background: #9d2417;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+}
 
   .massage-image,
   .massage-content {
@@ -501,13 +595,13 @@
   }
 
   .button-wrap {
-    flex-direction: column;
+    
     width: 100%;
   }
 
   .book-btn-1,
   .whatsapp-btn {
-    width: 100%;
+    width: 20%;
   }
 
   /* Team */
@@ -525,7 +619,7 @@
     grid-template-columns: 1fr;
     padding: 30px 20px;
     gap: 30px;
-    margin-top: 30px;
+   
   }
 
   .footer-bottom {
@@ -538,6 +632,11 @@
     flex-direction: column;
     gap: 10px;
   }
+  .menu-item .text {
+    display: block;
+    height: 51px;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
   /* Parallax */
   .parallax-section,
@@ -561,8 +660,60 @@
   img,
   video {
     max-width: 100%;
-    height: auto;
+    height: auto ;
   }
+  .center-image {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 2;
+}
+.custom-prev, .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(120 60 50 / 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 28px;
+    color: #fff;
+    transition: .3s;
+}
+.logo-item img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+  .testimonial-section {
+    padding: 25px 0 50px;
+    background: #f5f5f5;
+}
+.press-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-bottom: 40px;
+}
+.scroll {
+    align-items: center;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: var(--white-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
 }
 
 /* ===============================
@@ -609,7 +760,39 @@
         background-attachment: scroll;
         background-position: center;
         padding: 20px 15px;
+        object-fit: contain;
     }
+    .why-image img {
+    width: 100%;
+    border-radius: 20px;
+    height: auto !important;
+    object-fit: cover;
+    }
+    .banner-content h1 {
+    color: #f5ece5;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+.section-heading {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+}
+.bottom-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 70px;
+    padding-top: 35px;
+    border-top: 1px solid #b9aca4;
+    color: #5c5555;
+    font-size: 18px;
+
+
 
     .book-btn {
         top: 25px;

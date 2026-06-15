@@ -2425,7 +2425,7 @@ p.small {
     }
 
     .contact-card h3 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .bottom-contact {
@@ -2575,7 +2575,7 @@ p.small {
 @media(max-width:768px){
 
     .our-story{
-        padding:80px 20px;
+        padding:50px 20px;
     }
 
     .story-container h2{
@@ -2599,7 +2599,8 @@ p.small {
 @media(max-width:480px){
 
     .story-container h2{
-        font-size:38px;
+        font-size: 35px;
+        line-height: 1.3;
     }
 
     .story-heading::before,
@@ -3021,7 +3022,7 @@ p.small {
     }
 
     .section-title {
-        font-size: 50px;
+        font-size: 30px;
     }
 }
 
@@ -3298,7 +3299,7 @@ p.small {
     }
 
     .nav-btn {
-        width: 220px;
+        width: 238px;
     }
 }
 
