@@ -281,9 +281,11 @@
     letter-spacing: 1px;
   }
   .about-us p {
-    max-width: 100%;
+         max-width: 100%;
+        padding: 0px 10px;
+    }
  
-}
+
 .tune-btn {
     display: inline-flex;
     align-items: center;
