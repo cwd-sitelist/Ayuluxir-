@@ -741,6 +741,11 @@
         padding: 40px 20px;
         
     }
+    .section-heading {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+}
 
     .book-btn {
         top: 20px;
