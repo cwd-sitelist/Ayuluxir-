@@ -620,10 +620,12 @@
     width: 280px;
     height: 280px;
   }
+  
 
   .image-shape img {
     width: 190px;
   }
+
 
   /* Footer */
   .footer-top {
@@ -767,7 +769,7 @@
 @media (max-width: 767px) {
 
     .parallax-img {
-        height: 60vh;
+        height: 40vh;
         background-attachment: scroll;
         background-position: center;
         padding: 20px 15px;
@@ -802,7 +804,7 @@
     border-top: 1px solid #b9aca4;
     color: #5c5555;
     font-size: 18px;
-
+}
 
 
     .book-btn {
@@ -836,3 +838,4 @@
 
 
 }
+
