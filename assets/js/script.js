@@ -151,8 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
 var swiper = new Swiper(".wellnessSwiper", {
     slidesPerView: 3.5,
     spaceBetween: 35,
