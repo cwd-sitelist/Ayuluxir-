@@ -27,14 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-    $to = "sales@valartech.co.in"; // Replace with your email address
-    $subject = "Valar Tech Contact Form ";
+    $to = "sujithcwd@gmail.com"; // Replace with your email address
+    $subject = "Ayuluxir clinic Contact Form ";
 
     // Collect form inputs
     $name = htmlspecialchars($_POST['name']);
-    $number = htmlspecialchars($_POST['number']);
+    $phone = htmlspecialchars($_POST['phone']);
     $email = htmlspecialchars($_POST['email']);
-    $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
  
    
@@ -50,8 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
          
     $body = "Name: $name\n";
     
-    if (!empty($number)) {
-        $body .= "Number: $number\n";
+    if (!empty($phone)) {
+        $body .= "Number: $phone\n";
     }
     
     $body .= "Email: $email\n";

@@ -116,7 +116,7 @@
   <div class="container">
    <div class="row gy-4">
     <div class="col-lg-12" style="padding-bottom: 70px;">
-     <form method="post" action="javascript:void(0);" class="contact-form style-4 ajax-contact" method="POST">
+     <form method="post" action="PHPMailer/examples/smtpemail.php" class="contact-form style-4 ajax-contact" method="POST">
       <h3 class="form-title text-start">
        Get In Touch
       </h3>
@@ -139,7 +139,8 @@
         <textarea class="form-control" cols="30" id="message" name="message" placeholder="Your Message" rows="3" required></textarea>
        </div>
        <div class="form-btn col-12">
-        <button class="th-btn style2">
+        <button class="th-btn style2"    type="submit"
+                            name="submit-form" onclick="serviceFormSubmit(this)" >
          Send Message
          <i class="fa-solid fa-arrow-right">
          </i>
@@ -148,13 +149,96 @@
       </div>
       <p class="form-messages mb-0 mt-3">
       </p>
-     </form>
+    <div>
+        <div data-message=""></div>
     </div>
-    
+     </form>
+     <script>
+
+                      function serviceFormSubmit(ev){
+                          
+                          // Get the form.
+                          var form = jQuery(ev).closest("form");
+                      
+                          // Get the messages div.
+                          var formMessages = form.find("div[data-message]");
+                      
+                      
+                              event.preventDefault();
+                      
+                              // Serialize the form data.
+                      
+                              var formData = $(form).serialize();
+                              //console.log(formData);
+                              debugger
+                              // Submit the form using AJAX.
+                              $.ajax({
+                                  type: 'POST',
+                                  url: $(form).attr('action'),
+                                  data: formData
+                              })
+                              .done(function(response) {
+                                  // Make sure that the formMessages div has the 'success' class.
+                                  $(formMessages).removeClass('error');
+                                  $(formMessages).addClass('success');
+                      
+                                  // Set the message text.
+                                  $(formMessages).text(response);
+                      
+                                  $(formMessages).show();
+                      
+                                  form[0].reset();
+                      
+                              })
+                              .fail(function(data) {
+                                  // Make sure that the formMessages div has the 'error' class.
+                                  $(formMessages).removeClass('success');
+                                  $(formMessages).addClass('error');
+                      
+                                  // Set the message text.
+                                  if (data.responseText !== '') {
+                                      $(formMessages).text(data.responseText);
+                                      
+                                  } else {
+                                      $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                                  }
+                                  $(formMessages).show();
+                                  form[0].reset();
+                      
+                              });
+                      
+                      }
+                      
+                                               </script>
+    </div>    
     </div>
    </div>
   </div>
+     <script src="js/validation.js"></script>
+                <script type="text/javascript">
+            (function($) {
 
+                var validator = $("#contact-form").validate({
+                    submitHandler : function(form) {
+
+                    }
+                });
+                validator.form();
+
+                $("#contact-form").submit(function(e) {
+                    e.preventDefault();
+                    var form = validator.valid();
+                    if (form) {
+                        $.post('send_email.php', $(this).serialize(), function(data) {
+                            console.log("true");
+                            $('.wpcf7-response-output').text(data);
+                        });
+                    } else {
+                        $('.wpcf7-response-output').text("Please fill the field");
+                    }
+                })
+            })(jQuery)
+        </script>
 </section>
 
 <section>

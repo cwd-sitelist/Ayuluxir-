@@ -12,8 +12,8 @@ require_once('../class.phpmailer.php');
 
 $mail             = new PHPMailer();
 
-$body             = 'Mail From ValarTech';
-// $body             = preg_replace('/[\]/','',$body);
+$body             = 'Mail From ayulixir';
+// $body          = preg_replace('/[\]/','',$body);
 
 
 $hours = date("H");
@@ -27,11 +27,10 @@ $indiatimestamp  = $defaulttimestamp;
 $FromName=$_POST["name"];
 $FromPhone=$_POST["phone"];
 $FromEmail=$_POST["email"];
-$FromSubject=$_POST["subject"];
 $FromMessage=$_POST["message"];
 
  
-$address = "sales@valartech.co.in";
+$address = "sujithcwd@gmai.com";
 
 
 $message = "
@@ -50,9 +49,7 @@ $message = "
 			    <tr>
 				  <td>Phone</td><td>$FromPhone</td>
 				</tr>
-			<tr>
-				  <td>Email</td><td>$FromEmail</td>
-				</tr>
+		
                 	<tr>
 				  <td>Subject</td><td>$FromSubject</td>
 				</tr>
@@ -66,11 +63,11 @@ $message = "
 
 
 
-$to = 'info@valartech.co.in';
+$to = 'sujithcwd@gmail.com';
 
-$subject = 'Mail From Valartech';
+$subject = 'Mail From Ayuluxir';
 
-$headers  = "From: " . "info@valartech.co.in" . "\r\n";
+$headers  = "From: " . "sujithcwd@gmail.com" . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
