@@ -1,4 +1,3 @@
-
 <?php
 
 //error_reporting(E_ALL);
@@ -12,8 +11,8 @@ require_once('../class.phpmailer.php');
 
 $mail             = new PHPMailer();
 
-$body             = 'Mail From ayulixir';
-// $body          = preg_replace('/[\]/','',$body);
+$body             = 'Mail From Ayuluxir';
+// $body             = preg_replace('/[\]/','',$body);
 
 
 $hours = date("H");
@@ -25,8 +24,8 @@ $indiatimestamp  = $defaulttimestamp;
 
 
 $FromName=$_POST["name"];
-$FromPhone=$_POST["phone"];
 $FromEmail=$_POST["email"];
+$FromPhone=$_POST["phone"];
 $FromMessage=$_POST["message"];
 
  
@@ -47,12 +46,12 @@ $message = "
 				  <td>Name</td><td>$FromName</td>
 				</tr>
 			    <tr>
+				  <td>Phone</td><td>$FromEmail</td>
+				</tr>
+		          <tr>
 				  <td>Phone</td><td>$FromPhone</td>
 				</tr>
-		
-                	<tr>
-				  <td>Subject</td><td>$FromSubject</td>
-				</tr>
+            
 				<tr>
 				  <td>Message</td><td>$FromMessage</td>
 				</tr>
@@ -81,3 +80,9 @@ else{
 
 
 ?>
+this my smt code 
+
+
+I can see a few issues in your code that are causing the mail error.
+
+Problems in your code
