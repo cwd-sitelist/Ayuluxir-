@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Build the email body
     $body ="<h1 style='color:#28276e;'>Valueguru Contact Form</h1>";
-     $body .="<table border='1' cellspacing='0' cellpadding='8' style='border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;'>";
+    $body .="<table border='1' cellspacing='0' cellpadding='8' style='border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;'>";
     $body .= "<tr><td><strong>Name:</strong></td><td> $name\n</td></tr>";
     $body .= "<tr><td><strong>Phone:</strong></td><td> $phone\n</td></tr>";
     $body .= "<tr><td><strong>Email:</strong></td><td> $email\n</td></tr>";
