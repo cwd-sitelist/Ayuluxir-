@@ -2,6 +2,12 @@
 /* ================= CLOUD MOUSE EFFECT ================= */
 
 /* ================= MENU ANIMATION ================= */
+
+AOS.init({
+  duration: 2000, // 2 seconds
+  once: true
+});
+
 const header = document.querySelector(".header");
 const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
@@ -10,41 +16,41 @@ const bg = document.querySelector(".menu-bg");
 const items = document.querySelectorAll(".menu-item");
 const right = document.querySelector(".menu-right");
 
-let tl = gsap.timeline({ paused:true });
+let tl = gsap.timeline({ paused: true });
 
-tl.to(bg,{
-  clipPath:"circle(150% at 100% 0%)",
-  duration:1,
-  ease:"power4.inOut"
+tl.to(bg, {
+  clipPath: "circle(150% at 100% 0%)",
+  duration: 1,
+  ease: "power4.inOut"
 })
-.to(items,{
-  opacity:1,
-  x:0,
-  stagger:0.1,
-  duration:0.6
-},"-=0.6")
-.to(right,{
-  opacity:1,
-  x:0,
-  duration:0.6
-},"-=0.6");
+  .to(items, {
+    opacity: 1,
+    x: 0,
+    stagger: 0.1,
+    duration: 0.6
+  }, "-=0.6")
+  .to(right, {
+    opacity: 1,
+    x: 0,
+    duration: 0.6
+  }, "-=0.6");
 
-toggle.addEventListener("click",()=>{
+toggle.addEventListener("click", () => {
 
   toggle.classList.toggle("active");
   header.classList.toggle("active");
   menulabel.classList.toggle("active");
 
-  if(toggle.classList.contains("active")){
-    menu.style.visibility="visible";
+  if (toggle.classList.contains("active")) {
+    menu.style.visibility = "visible";
     tl.play();
-    document.body.style.overflow="hidden";
-  }else{
+    document.body.style.overflow = "hidden";
+  } else {
     tl.reverse();
-    setTimeout(()=>{
-      menu.style.visibility="hidden";
-      document.body.style.overflow="auto";
-    },800);
+    setTimeout(() => {
+      menu.style.visibility = "hidden";
+      document.body.style.overflow = "auto";
+    }, 800);
   }
 
 });
@@ -144,63 +150,99 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-     AOS.init({
-  once: true,          
-  mirror: false      
+AOS.init({
+  once: true,
+  mirror: false
 });
 
 
 
 var swiper = new Swiper(".wellnessSwiper", {
-    slidesPerView: 3.5,
-    spaceBetween: 35,
-    loop: true,
-    speed: 1000,
+  slidesPerView: 3.5,
+  spaceBetween: 35,
+  loop: true,
+  speed: 1000,
 
-    navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
+  navigation: {
+    nextEl: ".custom-next",
+    prevEl: ".custom-prev",
+  },
+
+  // autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  // },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
     },
-
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
-
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1200: {
-            slidesPerView: 4
-        }
+    768: {
+      slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 4
     }
+  }
 });
 
 
 
 $('.testimonial-carousel').owlCarousel({
-    loop: true,
-    margin: 15, // equal center spacing
-    nav: false,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    smartSpeed: 1000,
+  loop: true,
+  margin: 15, // equal center spacing
+  nav: false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  smartSpeed: 1000,
 
-    responsive: {
-        0: {
-            items: 1,
-            margin: 10
-        },
-        768: {
-            items: 2,
-            margin: 15
-        }
+  responsive: {
+    0: {
+      items: 1,
+      margin: 10
+    },
+    768: {
+      items: 2,
+      margin: 15
     }
+  }
 });
 
 
+
+jQuery(document).ready(function () {
+            jQuery("#contactform").on("submit", function (event) {
+                event.preventDefault(); // Prevent the form from submitting the default way
+
+                // Clear previous messages
+                jQuery("#responseMessage").text("");
+                jQuery("#errorMessage").text("");
+
+                // Prepare form data for AJAX
+                var formData = new FormData(this);
+
+                // Make the AJAX request
+                jQuery.ajax({
+                    url: "sendmail.php", // Replace with your server-side script
+                    type: "POST",
+                    data: formData,
+                    contentType: false, // Important for file upload
+                    processData: false, // Prevent jQuery from processing the data
+                    success: function (response) {
+                        jQuery("#responseMessage").text(response); // Display success message
+                    },
+
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        jQuery("#errorMessage").text("Error occurred: " + textStatus + " - " + errorThrown);
+                    },
+                });
+            });
+        });
+
+
+const heroVideo = document.getElementById("heroVideo");
+
+heroVideo.addEventListener("loadedmetadata", () => {
+  heroVideo.playbackRate = 0.5;  // 0.5 = slower, 0.3 = cinematic slow, 1 = normal
+});

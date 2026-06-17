@@ -7,11 +7,10 @@
     <title>Ayuluxir - Contact Us</title>
     <link rel="icon" type="image/x-icon" href="assets/images/home/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -314,54 +313,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
-
-    <script>
-        const heroVideo = document.getElementById("heroVideo");
-        heroVideo.addEventListener("loadedmetadata", () => {
-            heroVideo.playbackRate = 0.5;  // 0.5 = slower, 0.3 = cinematic slow, 1 = normal
-        });
-    </script>
-    <script>
-        AOS.init({
-            duration: 2000, // 2 seconds
-            once: true
-        });
-    </script>
-    <script>
-        jQuery(document).ready(function () {
-            jQuery("#contactform").on("submit", function (event) {
-                event.preventDefault(); // Prevent the form from submitting the default way
-
-                // Clear previous messages
-                jQuery("#responseMessage").text("");
-                jQuery("#errorMessage").text("");
-
-                // Prepare form data for AJAX
-                var formData = new FormData(this);
-
-                // Make the AJAX request
-                jQuery.ajax({
-                    url: "sendmail.php", // Replace with your server-side script
-                    type: "POST",
-                    data: formData,
-                    contentType: false, // Important for file upload
-                    processData: false, // Prevent jQuery from processing the data
-                    success: function (response) {
-                        jQuery("#responseMessage").text(response); // Display success message
-                    },
-
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        jQuery("#errorMessage").text("Error occurred: " + textStatus + " - " + errorThrown);
-                    },
-                });
-            });
-        });
-    </script>
-
 </body>
-
 </html>
