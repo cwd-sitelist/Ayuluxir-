@@ -3147,7 +3147,7 @@ p.small {
 .contact-title {
     font-size: 30px;
     font-weight: 600;
-    color: #fff;
+    color: #fff !important;
     font-family: var(--primary-font);
     margin-bottom: 10px;
     line-height: 1.2;
